@@ -51,3 +51,7 @@ header{
     border-bottom: 1px solid;
     transition: 0.5s;
 }
+
+.gradient{
+    background: linear-gradient(122deg, #DFFF1B 0%, #4CAF50 100%)
+}

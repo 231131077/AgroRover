@@ -14,12 +14,12 @@ body {
 }
 
 body {
-  background: url(../image/background-signin.jpg);
+  background: url(../image/register.jpg);
   background-size: cover;
 }
 
 main {
-  width: 420px;
+  width: 550px;
   background: rgba(255, 255, 255, 0.68);
   color: rgb(0, 0, 0);
   border-radius: 10px;
@@ -49,19 +49,11 @@ main .input-box {
   border-radius: 5px;
   color: #000000;
   font-size: 16px;
-  padding: 20px 45px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .input-box input::placeholder {
   color: #000000;
-}
-
-.input-box svg {
-  position: absolute;
-  left: 90%;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
 }
 
 main .remember-forgot {
@@ -97,7 +89,6 @@ form {
 }
 
 main button {
-  margin-top: 40px;
   width: 100%;
   height: 45px;
   background: #29481e;
@@ -125,4 +116,21 @@ button a {
   color: #000000;
   text-decoration: none;
   font-weight: 600;
+}
+
+header{
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    margin-left: 0;
+}
+
+.left-logo img{
+    width: 400px;
+}
+
+.left-logo p{
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black;
 }
