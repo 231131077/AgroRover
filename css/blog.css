@@ -1,0 +1,106 @@
+.cover {
+  max-width: 1440px;
+  max-height: fit-content;
+  background-image: url(../image/header.jpg);
+  background-size: cover;
+  padding: 3%;
+  padding-top: 30%;
+  color: white;
+}
+
+.cover span {
+  margin-top: 100px;
+  max-width: 1440px;
+}
+
+.cover span a {
+  border-radius: 5px;
+  padding: 2%;
+  background-color: #29481e;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.desc {
+  margin: 20px;
+  padding: 20px;
+}
+
+.desc ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.desc h3 {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.desc ul li {
+  border: 1px solid rgba(255, 255, 255, 0);
+  list-style-type: none;
+}
+
+.tentang {
+  margin: 20px;
+  padding: 20px;
+}
+
+.tentang h1 {
+  text-align: center;
+  margin: 50px 20px 20px 20px;
+}
+
+.tentang p {
+  text-align: justify;
+}
+.dev {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+}
+
+.dev h1{
+  text-align: center;
+}
+.fitri {
+  text-align: center;
+  margin: 20px 20px;
+  position: relative;
+  left: -100px;
+}
+
+.fitri img {
+  border-radius: 100%;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.fitri span {
+  color: grey;
+}
+
+footer {
+  margin: 0;
+  padding: 20px 40px;
+  text-align: left;
+  color: white;
+  background-color: black;
+}
+
+footer h3,
+footer p,
+footer svg {
+  margin-bottom: 10px;
+}
+
+footer svg{
+  width: 30px;
+  height: 30px;
+}

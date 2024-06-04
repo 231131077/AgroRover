@@ -63,12 +63,6 @@ main .remember-forgot {
   margin: -15px 0 15px;
 }
 
-form img {
-  width: 20%;
-  display: block;
-  margin: 0 auto;
-}
-
 form {
   text-align: center;
 }
@@ -118,19 +112,31 @@ button a {
   font-weight: 600;
 }
 
-header{
-    align-items: center;
-    text-align: center;
-    padding: 100px;
-    margin-left: 0;
+header {
+  align-items: center;
+  text-align: center;
+  padding: 100px;
+  margin-left: 0;
 }
 
-.left-logo img{
-    width: 400px;
+.left-logo img {
+  width: 400px;
 }
 
-.left-logo p{
-    color: white;
-    font-size: 20px;
-    text-shadow: 2px 2px 5px black;
+.left-logo p {
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px black;
+}
+
+@media (max-width: 992px) {
+  .left-logo {
+    display: none;
+  }
+
+  .card{
+    display: block;
+    margin: auto;
+  }
+
 }
