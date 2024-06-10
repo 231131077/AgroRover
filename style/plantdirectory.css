@@ -1,0 +1,50 @@
+:root {
+    max-width: 1440px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(122deg, #DFFF1B 0%, #4CAF50 100%);
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+main {
+    margin: 20px;
+}
+
+#jenis {
+    width: 22em;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    margin-left: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+table tr {
+    max-width: 20%;
+}
+
+.item {
+    background: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 12px black ;
+}
+
+.desc {
+    border-top: 1px solid #000;
+}
