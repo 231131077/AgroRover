@@ -1,3 +1,7 @@
+*{
+  font-family: "Varela", sans-serif;
+}
+
 .hamberger-menu {
   display: inline-block;
   cursor: pointer;

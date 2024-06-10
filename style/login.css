@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Varela", sans-serif;
 }
 
 body {
@@ -14,12 +14,12 @@ body {
 }
 
 body {
-  background: url(../image/register.jpg);
+  background: url(/assets/image/content/background-signin.jpg);
   background-size: cover;
 }
 
 main {
-  width: 550px;
+  width: 420px;
   background: rgba(255, 255, 255, 0.68);
   color: rgb(0, 0, 0);
   border-radius: 10px;
@@ -49,11 +49,19 @@ main .input-box {
   border-radius: 5px;
   color: #000000;
   font-size: 16px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder {
   color: #000000;
+}
+
+.input-box svg {
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
 }
 
 main .remember-forgot {
@@ -61,6 +69,12 @@ main .remember-forgot {
   justify-content: space-between;
   font-size: 14px;
   margin: -15px 0 15px;
+}
+
+form img {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
 }
 
 form {
@@ -83,6 +97,7 @@ form {
 }
 
 main button {
+  margin-top: 40px;
   width: 100%;
   height: 45px;
   background: #29481e;
@@ -110,33 +125,4 @@ button a {
   color: #000000;
   text-decoration: none;
   font-weight: 600;
-}
-
-header {
-  align-items: center;
-  text-align: center;
-  padding: 100px;
-  margin-left: 0;
-}
-
-.left-logo img {
-  width: 400px;
-}
-
-.left-logo p {
-  color: white;
-  font-size: 20px;
-  text-shadow: 2px 2px 5px black;
-}
-
-@media (max-width: 992px) {
-  .left-logo {
-    display: none;
-  }
-
-  .card{
-    display: block;
-    margin: auto;
-  }
-
 }
