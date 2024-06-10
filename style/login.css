@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  background: url(/assets/image/content/background-signin.jpg);
+  background: url(../assets/image/content/background-signin.jpg);
   background-size: cover;
 }
 

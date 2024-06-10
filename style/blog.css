@@ -1,11 +1,11 @@
-*{
+* {
   font-family: "Varela", sans-serif;
 }
 
 .cover {
   max-width: 1440px;
   max-height: fit-content;
-  background-image: url(/assets/image/content/header.jpg);
+  background-image: url(../assets/image/content/header.jpg);
   background-size: cover;
   padding: 3%;
   padding-top: 30%;

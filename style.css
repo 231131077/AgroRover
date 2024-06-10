@@ -5,7 +5,7 @@
 header {
   max-width: 1440px;
   max-height: fit-content;
-  background-image: url(/assets/image/content/header.jpg);
+  background-image: url(../AgroRover/assets/image/content/header.jpg);
   background-size: cover;
   padding: 3%;
   padding-top: 23%;
@@ -66,7 +66,7 @@ footer {
     text-decoration: none;
   }
 
-  header span{
+  header span {
     display: block;
     align-items: center;
     justify-content: center;
@@ -89,19 +89,19 @@ footer {
 }
 
 @media (max-width: 622px) {
-    header span a {
-      margin-right: 0 !important;
-      border-radius: 5px;
-      padding: 2% 32%;
-      background-color: #29481e;
-      font-size: 70%;
-      font-weight: bold;
-      text-align: center;
-      color: white;
-      text-decoration: none;
-    }
+  header span a {
+    margin-right: 0 !important;
+    border-radius: 5px;
+    padding: 2% 32%;
+    background-color: #29481e;
+    font-size: 70%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+  }
 
-    ul li {
-        margin: 5%;
-      }
+  ul li {
+    margin: 5%;
+  }
 }
