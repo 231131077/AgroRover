@@ -1,0 +1,197 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+}
+header {
+    background: linear-gradient(122deg, #dfff1b 0%, #4caf50 100%);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+header input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+header .cart-icon {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+section {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.profile-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.profile-container img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.picture-info{
+    text-align: center;
+}
+.picture-info p {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+}
+.picture-info button {
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+.profile-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.profile-container input,
+.profile-container select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.profile-container .gender-options {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-container .gender-options label {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.profile-container .gender-options input {
+    margin-right: 5px;
+}
+
+.profile-container button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 5px;
+}
+
+.footer-section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    text-align: justify;
+    list-style: none;
+    padding: 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    text-align: justify;
+    font-size: 14px;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+.footer-bottom p {
+    margin: 0;
+}

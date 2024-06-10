@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/style/akunanda.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/assets/logo/logo.png" alt="Logo">
+        <input type="text" placeholder="Cari bahan yang anda inginkan...">
+        <span class="cart-icon">&#128722;</span>
+    </header>
+
+    <main>
+        <nav>
+            <a href="#">
+                <img src="https://picsum.photos/245/200" alt="Profile Picture">
+                <span>Ruka</span>
+            </a>
+            <ul>
+                <li><a href="#">Akun Saya</a></li>
+                <li><a href="#">Pesanan Saya</a></li>
+                <li><a href="#">Notifikasi</a></li>
+                <li><a href="#">Voucher Saya</a></li>
+                <li><a href="#">Koin Saya</a></li>
+                <li><a href="#">Daftar sebagai penjual</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <section class="profile-container">
+                <h2>Profil Pengguna</h2>
+                <img src="https://picsum.photos/245/200" alt="Profile Picture">
+                <section class="picture-info">
+                    <p>Ukuran gambar: max 10mb</p>
+                    <p>Format gambar: .JPG, .IMG, .PNG, .JPEG</p>
+                    <button>Ubah Gambar</button>
+                </section>
+                <form>
+                    <label for="username">username</label>
+                    <input type="text" id="username" value="babymonster_ruka">
+
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" value="Kawai Ruka">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="babymonster_ruka@ygentertainment.co.kr">
+
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" value="(+82) 123456789">
+
+                    <label for="store">Nama Toko</label>
+                    <input type="text" id="store" value="Babymonster_Farms">
+
+                    <label>Jenis Kelamin</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="male"> Laki - Laki</label>
+                        <label><input type="radio" name="gender" value="female" checked> Perempuan</label>
+                        <label><input type="radio" name="gender" value="non-gender"> Non-gender</label>
+                    </div>
+
+                    <label for="birthdate">Tanggal Lahir</label>
+                    <input type="date" id="birthdate" value="2002-03-20">
+
+                    <button type="submit">Simpan</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-container">
+            <section class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Tiktok</li>
+                    <li>Kampus Pengembang</li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Layanan Pelanggan</h3>
+                <ul>
+                    <li>Bantuan</li>
+                    <li>Metode Pembayaran</li>
+                    <li>Hubungi Kami ya, admin jomblo</li>
+                    <li>Gratis Ongkir</li>
+                    <li>AgroPay</li>
+                    <li>Agro Coins</li>
+                    <li>Agro Voucher</li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h3>Metode Pembayaran</h3>
+                <ul>
+                    <li>AgroPay</li>
+                    <li>Mobile Banking</li>
+                    <li>Virtual Account</li>
+                    <li>Indomaret</li>
+                    <li>Alfamidi</li>
+                    <li>Alfamart</li>
+                </ul>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy; 2024 AgroRover. All Rights Reserved.</p>
+            <p>Universitas Mikroskil, Indonesia</p>
+        </section>
+    </footer>
+</body>
+</html>
