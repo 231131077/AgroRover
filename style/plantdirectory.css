@@ -1,17 +1,8 @@
 :root {
     max-width: 1440px;
+    margin: 0;
+    padding: 0;
 }
-
-header {
-    display: flex;
-    width: 100%;
-    background: linear-gradient(122deg, #DFFF1B 0%, #4CAF50 100%);
-    position: relative;
-    justify-content: space-between;
-    text-align: center;
-    padding: 15px 30px;
-}
-
 main {
     margin: 20px;
 }
@@ -33,11 +24,11 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-table tr {
+.container table tr {
     max-width: 20%;
 }
 
-.item {
+.itemPlant {
     background: white;
     margin: 20px;
     padding: 10px;
