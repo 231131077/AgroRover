@@ -106,13 +106,8 @@ main button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  color: #333;
+  color: #ffffff;
   font-weight: 600;
-}
-
-button a {
-  color: white;
-  text-decoration: none;
 }
 
 .register {
