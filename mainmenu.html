@@ -1,473 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:site_name" content="AgroRover" />
-    <link
-      rel="shortcut icon"
-      href="assets/favicon/favicon.ico"
-      image="/x-icon"
-    />
-    <link rel="stylesheet" href="style/mainmenu.css" />
-    <meta
-      property="og:title"
-      content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
-      rel="stylesheet"
-    />
-    <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
-  </head>
-  <body>
-    <!-- SIDE BAR MENU -->
-    <aside>
-      <nav>
-        <ul>
-          <li>
-            <section id="mdiv" onclick="openNav()">
-              <section class="mdiv">
-                <section class="md"></section>
-              </section>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:site_name" content="AgroRover" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" image="/x-icon" />
+  <link rel="stylesheet" href="style/mainmenu.css" />
+  <meta property="og:title" content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet" />
+  <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
+</head>
+
+<body>
+  <!-- SIDE BAR MENU -->
+  <aside>
+    <nav>
+      <ul>
+        <li>
+          <section id="mdiv" onclick="openNav()">
+            <section class="mdiv">
+              <section class="md"></section>
             </section>
-          </li>
-          <li><a href="mainmenu.html">Beranda</a></li>
-          <li><a href="">Produk</a></li>
-          <li><a href="">Kategori</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="akunanda.html">Akun Anda</a></li>
-          <li><a href="">Toko Anda</a></li>
-          <li><a href="plantdirectory.html">Panduan Pertumbuhan</a></li>
-          <li><a href="">Panduan Kondisi Tanah dan Pupuk</a></li>
-          <li><a href="login.html">Keluar</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <!-- INI ADALAH OPENING HEADER -->
-    <header>
-      <form action="mainmenu.html" method="GET">
-        <table>
-          <caption>
-            Ikuti Kami di,
-          </caption>
-          <tr>
-            <td><img src="assets/logo/logo.png" alt="Logo" /></td>
-            <section class="containerSearch">
-              <td class="search-bar">
-                <input
-                  type="search"
-                  placeholder="Cari bahan yang anda inginkan..."
-                />
-              </td>
-              <td>
-                <button type="submit" class="searchBtn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    class="bi bi-search"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                    />
-                  </svg>
-                </button>
-              </td>
-            </section>
-            <td class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                class="bi bi-cart-dash-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                class="bi bi-bell-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
-                />
-              </svg>
-              <svg
-                onclick="openNav()"
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="currentColor"
-                class="iHamburger"
-                viewBox="0 1 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-                />
-              </svg>
+          </section>
+        </li>
+        <li><a href="mainmenu.html">Beranda</a></li>
+        <li><a href="">Produk</a></li>
+        <li><a href="">Kategori</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="akunanda.html">Akun Anda</a></li>
+        <li><a href="">Toko Anda</a></li>
+        <li><a href="plantdirectory.html">Panduan Pertumbuhan</a></li>
+        <li><a href="">Panduan Kondisi Tanah dan Pupuk</a></li>
+        <li><a href="login.html">Keluar</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- INI ADALAH OPENING HEADER -->
+  <header>
+    <form action="mainmenu.html" method="GET">
+      <table>
+        <caption>
+          Ikuti Kami di,
+        </caption>
+        <tr>
+          <td><img src="assets/logo/logo.png" alt="Logo" /></td>
+          <section class="containerSearch">
+            <td class="search-bar">
+              <input type="search" placeholder="Cari bahan yang anda inginkan..." />
             </td>
-          </tr>
-        </table>
-      </form>
-    </header>
-    <!-- INI ADALAH CLOSING HEADER -->
-
-    <!-- INI ADALAH OPENING ADSENSE -->
-    <main>
-      <article class="ads">
-        <article class="containerAd">
-          <section class="wrapperAd">
-            <!--MAX 4 CONTTENT-->
-            <img
-              src="assets/image/ads/iklan1.1.jpg"
-              alt="preview1"
-              class="autoscroll"
-            />
-            <img
-              src="assets/image/ads/iklan1.2.jpg"
-              alt="preview2"
-              class="autoscroll"
-            />
-            <img
-              src="assets/image/ads/iklan1.3.jpg"
-              alt="preview3"
-              class="autoscroll"
-            />
-            <img
-              src="assets/image/ads/iklan1.4.jpg"
-              alt="preview4"
-              class="autoscroll"
-            />
+            <td>
+              <button type="submit" class="searchBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+              </button>
+            </td>
           </section>
-        </article>
-        <article class="Ads2">
-          <section class="wrapperAd2">
-            <img src="assets/image/ads/iklan1.2.jpg" alt="" />
-            <img src="assets/image/ads/iklan1.4.jpg" alt="" />
-          </section>
-        </article>
-      </article>
-      <!-- INI ADALAH CLOSING ADSENSE -->
-
-      <!-- INI ADALAH OPENING E-WALLET -->
-      <section class="card-container">
-        <article class="card">
-          <section class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-wallet2"
-              viewBox="0 0 16 16"
-            >
+          <td class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-cart-dash-fill" viewBox="0 0 16 16">
               <path
-                d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z"
-              />
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1" />
             </svg>
-          </section>
-          <section class="values">
-            <p>AgroPay</p>
-            <p><small>Rp.99999999999999999999</small></p>
-          </section>
-        </article>
-        <article class="card">
-          <section class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-p-circle-fill"
-              viewBox="0 0 16 16"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bell-fill"
+              viewBox="0 0 16 16">
               <path
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.5 4.002V12h1.283V9.164h1.668C10.033 9.164 11 8.08 11 6.586c0-1.482-.955-2.584-2.538-2.584zm2.77 4.072c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97z"
-              />
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
             </svg>
-          </section>
-          <section class="values">
-            <p>AgroPoints</p>
-            <p><small>12.734</small></p>
-          </section>
-        </article>
-        <article class="card">
-          <section class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-tags-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
-              />
-              <path
-                d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z"
-              />
+            <svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="iHamburger" viewBox="0 1 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
             </svg>
-          </section>
-          <section class="values">
-            <p>MyVoucher</p>
-            <p><small>5 Aktif</small></p>
-          </section>
-        </article>
-      </section>
-      <!-- INI ADALAH CLOSING E-WALLET -->
+          </td>
+        </tr>
+      </table>
+    </form>
+  </header>
+  <!-- INI ADALAH CLOSING HEADER -->
 
-      <article class="categories">
-        <h2 class="title">Semua Kategori</h2>
-        <ul>
-          <li>
-            <img src="assets/image/mainmenu/sayur.jpeg" alt="" />
-            <p>Sayuran</p>
-          </li>
-          <li>
-            <img src="assets/image/mainmenu/buah-buahan.png" alt="" />
-            <p>Buah-buahan</p>
-          </li>
-          <li>
-            <img src="assets/image/mainmenu/Ikan.png" alt="" />
-            <p>Ikan</p>
-          </li>
-          <li>
-            <img src="assets/image/mainmenu/Protein.png" alt="" />
-            <p>Protein</p>
-          </li>
-          <li>
-            <img src="assets/image/mainmenu/Rempah-Rempah.png" alt="" />
-            <p>Rempah-rempah</p>
-          </li>
-          <li>
-            <img src="assets/image/mainmenu/Sembako.png" alt="" />
-            <p>Sembako</p>
-          </li>
-          <li>
-            <img src="assets/image/mainmenu/Makanan-Ringan.png" alt="" />
-            <p>Makanan Ringan</p>
-          </li>
-        </ul>
-      </article>
-
-      <!-- INI ADALAH OPENING RECOMMEND ITEMS -->
-      <article class="shop">
-        <h2>Rekomendasi Untuk Kamu,</h2>
-        <section class="container">
-          <article class="item">
-            <img
-              src="https://picsum.photos/245/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/246/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/247/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/248/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/249/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/250/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/251/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/252/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/253/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/254/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/255/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
-          <article class="item">
-            <img
-              src="https://picsum.photos/256/200"
-              alt=""
-              class="productimg"
-            />
-            <p class="text"><b>Lorem Ipsum</b></p>
-            <p class="text desc">1kg</p>
-            <p class="text-icon">Diskon 10%</p>
-            <p class="text"><del>Rp. 1.000.000</del></p>
-            <p class="text">Rp. 900.000</p>
-          </article>
+  <!-- INI ADALAH OPENING ADSENSE -->
+  <main>
+    <article class="ads">
+      <article class="containerAd">
+        <section class="wrapperAd">
+          <!--MAX 4 CONTTENT-->
+          <img src="assets/image/ads/iklan1.1.jpg" alt="preview1" class="autoscroll" />
+          <img src="assets/image/ads/iklan1.2.jpg" alt="preview2" class="autoscroll" />
+          <img src="assets/image/ads/iklan1.3.jpg" alt="preview3" class="autoscroll" />
+          <img src="assets/image/ads/iklan1.4.jpg" alt="preview4" class="autoscroll" />
         </section>
       </article>
-      <!-- INI ADALAH CLOSING RECOMMEND ITEMS -->
-    </main>
-    <footer>
+      <article class="Ads2">
+        <section class="wrapperAd2">
+          <img src="assets/image/ads/iklan1.2.jpg" alt="" />
+          <img src="assets/image/ads/iklan1.4.jpg" alt="" />
+        </section>
+      </article>
+    </article>
+    <!-- INI ADALAH CLOSING ADSENSE -->
+
+    <!-- INI ADALAH OPENING E-WALLET -->
+    <section class="card-container">
+      <article class="card">
+        <section class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z" />
+          </svg>
+        </section>
+        <section class="values">
+          <p>AgroPay</p>
+          <p><small>Rp.99999999999999999999</small></p>
+        </section>
+      </article>
+      <article class="card">
+        <section class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-p-circle-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.5 4.002V12h1.283V9.164h1.668C10.033 9.164 11 8.08 11 6.586c0-1.482-.955-2.584-2.538-2.584zm2.77 4.072c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97z" />
+          </svg>
+        </section>
+        <section class="values">
+          <p>AgroPoints</p>
+          <p><small>12.734</small></p>
+        </section>
+      </article>
+      <article class="card">
+        <section class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+            <path
+              d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z" />
+          </svg>
+        </section>
+        <section class="values">
+          <p>MyVoucher</p>
+          <p><small>5 Aktif</small></p>
+        </section>
+      </article>
+    </section>
+    <!-- INI ADALAH CLOSING E-WALLET -->
+
+    <article class="categories">
+      <h2 class="title">Semua Kategori</h2>
+      <ul>
+        <li>
+          <img src="assets/image/mainmenu/sayur.jpeg" alt="" />
+          <p>Sayuran</p>
+        </li>
+        <li>
+          <img src="assets/image/mainmenu/buah-buahan.png" alt="" />
+          <p>Buah-buahan</p>
+        </li>
+        <li>
+          <img src="assets/image/mainmenu/Ikan.png" alt="" />
+          <p>Ikan</p>
+        </li>
+        <li>
+          <img src="assets/image/mainmenu/Protein.png" alt="" />
+          <p>Protein</p>
+        </li>
+        <li>
+          <img src="assets/image/mainmenu/Rempah-Rempah.png" alt="" />
+          <p>Rempah-rempah</p>
+        </li>
+        <li>
+          <img src="assets/image/mainmenu/Sembako.png" alt="" />
+          <p>Sembako</p>
+        </li>
+        <li>
+          <img src="assets/image/mainmenu/Makanan-Ringan.png" alt="" />
+          <p>Makanan Ringan</p>
+        </li>
+      </ul>
+    </article>
+
+    <!-- INI ADALAH OPENING RECOMMEND ITEMS -->
+    <article class="shop">
+      <h2>Rekomendasi Untuk Kamu,</h2>
       <section class="container">
-        <section class="list">
-          <section class="item">
-            <h1>Ikuti Kami</h1>
-            <ul>
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>Tiktok</li>
-              <li>Kampus Pengembang</li>
-            </ul>
-          </section>
-          <section class="item">
-            <h1>Layanan Pelanggan</h1>
-            <ul>
-              <li>Bantuan</li>
-              <li>Metode Pembayaran</li>
-              <li>Hubungi Kami</li>
-              <li>Gratis Ongkir</li>
-              <li>AgroPay</li>
-              <li>Agro Coins</li>
-              <li>Agro Voucher</li>
-            </ul>
-          </section>
-          <section class="item">
-            <h1>Metode Pembayaran</h1>
-            <ul>
-              <li>AgroPay</li>
-              <li>Mobile Banking</li>
-              <li>Virtual Account</li>
-              <li>Indomaret</li>
-              <li>Alfamidi</li>
-              <li>Alfamart</li>
-            </ul>
-          </section>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+        <a href="shopitem.html">
+          <article class="item">
+            <img src="https://picsum.photos/245/200" alt="" class="productimg" />
+            <p class="text"><b>Lorem Ipsum</b></p>
+            <p class="text desc">1kg</p>
+            <p class="text-icon">Diskon 10%</p>
+            <p class="text"><del>Rp. 1.000.000</del></p>
+            <p class="text">Rp. 900.000</p>
+          </article>
+        </a>
+      </section>
+    </article>
+    <!-- INI ADALAH CLOSING RECOMMEND ITEMS -->
+  </main>
+  <footer>
+    <section class="container">
+      <section class="list">
+        <section class="item">
+          <h1>Ikuti Kami</h1>
+          <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Tiktok</li>
+            <li>Kampus Pengembang</li>
+          </ul>
+        </section>
+        <section class="item">
+          <h1>Layanan Pelanggan</h1>
+          <ul>
+            <li>Bantuan</li>
+            <li>Metode Pembayaran</li>
+            <li>Hubungi Kami</li>
+            <li>Gratis Ongkir</li>
+            <li>AgroPay</li>
+            <li>Agro Coins</li>
+            <li>Agro Voucher</li>
+          </ul>
+        </section>
+        <section class="item">
+          <h1>Metode Pembayaran</h1>
+          <ul>
+            <li>AgroPay</li>
+            <li>Mobile Banking</li>
+            <li>Virtual Account</li>
+            <li>Indomaret</li>
+            <li>Alfamidi</li>
+            <li>Alfamart</li>
+          </ul>
         </section>
       </section>
-      <section class="watermark">
-        <section>
-          <p>Copyright &copy; 2024 AgroRover. All Rights Reserved.</p>
-        </section>
-        <section class="univ">
-          <p>Universitas Mikroskil, Indonesia.</p>
-        </section>
+    </section>
+    <section class="watermark">
+      <section>
+        <p>Copyright &copy; 2024 AgroRover. All Rights Reserved.</p>
       </section>
-    </footer>
+      <section class="univ">
+        <p>Universitas Mikroskil, Indonesia.</p>
+      </section>
+    </section>
+  </footer>
 
-    <script>
-      function openNav() {
-        document.querySelector("body").classList.toggle("wrap");
-        document.querySelector("aside").classList.toggle("active");
-      }
-    </script>
-  </body>
+  <script>
+    function openNav() {
+      document.querySelector("body").classList.toggle("wrap");
+      document.querySelector("aside").classList.toggle("active");
+    }
+  </script>
+</body>
+
 </html>

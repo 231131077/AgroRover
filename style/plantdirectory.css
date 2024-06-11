@@ -1,41 +1,45 @@
 :root {
-    max-width: 1440px;
-    margin: 0;
-    padding: 0;
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Varela", sans-serif;
 }
 main {
-    margin: 20px;
+  margin: 20px;
 }
 
 #jenis {
-    width: 22em;
-    padding: 10px;
-    font-size: 16px;
-    margin: 10px;
-    margin-left: 0;
+  width: 22em;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-left: 0;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .container table tr {
-    max-width: 20%;
+  max-width: 20%;
 }
 
 .itemPlant {
-    background: white;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 12px black ;
+  background: white;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 12px black;
 }
 
 .desc {
-    border-top: 1px solid #000;
+  border-top: 1px solid #000;
 }

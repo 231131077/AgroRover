@@ -1,0 +1,305 @@
+* {
+  font-family: "Varela", sans-serif;
+  top: 0;
+}
+main {
+  margin: 2% 5%;
+  display: block;
+}
+
+.container-content {
+  display: flex;
+}
+
+.star,
+.details {
+  display: flex;
+}
+
+.details {
+  justify-content: space-around;
+}
+
+.star {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: green;
+}
+
+small {
+  color: grey;
+}
+
+.left-content {
+  max-width: 20em;
+}
+
+.left-content img {
+  width: 100%;
+  position: sticky;
+  top: 50px;
+  border: 5px solid;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.right-content {
+  width: 100%;
+  padding: 0 5%;
+}
+
+.navigation ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navigation ul li {
+  height: 50px;
+  list-style: none;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.navigation ul li:hover {
+  background: rgb(48, 75, 48);
+  color: white;
+}
+
+.container-price {
+  line-height: 0px;
+}
+
+.text-icon {
+  line-height: 10px;
+}
+
+.descAndInfo p {
+  color: black;
+}
+
+.desc {
+  display: block;
+}
+.info {
+  display: none;
+}
+
+.info p {
+  line-height: 0px;
+  color: gray;
+}
+
+.desc.changeX {
+  display: none;
+}
+.info.changeY {
+  display: block;
+}
+
+.quantity {
+  margin-top: 5%;
+  display: block;
+  line-height: 0;
+  width: 100%;
+}
+
+.quantity input {
+  width: 90%;
+  padding: 10px;
+  outline: none;
+}
+.container-button {
+  max-width: 100%;
+  display: block;
+  margin: 10px 10px 10px 0;
+}
+.container-button svg {
+  margin: 0 5px;
+}
+.container-button button {
+  width: 100%;
+  height: 30px;
+  color: white;
+  background: rgb(48, 75, 48);
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 24px;
+  display: flex;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.shop {
+  margin: 10% 0;
+}
+
+.shop-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-logo img {
+  width: 70%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.shop-name {
+  line-height: 5px;
+  text-align: left;
+  margin: 0 10px;
+  width: 100%;
+}
+
+.shop-name p {
+  color: gray;
+}
+
+.shop-container button {
+  width: 100%;
+  padding: 2%;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.left-comment {
+  width: 30%;
+  padding: 2%;
+}
+.right-comment {
+  width: 100%;
+}
+
+main .container-comments {
+  margin: 5% 0;
+}
+
+.left-comment h2 {
+  font-size: 30px;
+  line-height: 0;
+  text-align: center;
+}
+.rate-comment {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  border: 2px solid transparent;
+}
+
+.wrapper-star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+.left-comment svg {
+  color: orange;
+}
+
+.container-right {
+  margin: 20px;
+}
+
+.comment {
+  display: flex;
+}
+
+.star-container {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  padding: 0 10px;
+}
+
+.star-container svg {
+  width: 1em;
+  height: 1em;
+  color: orange;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  line-height: 0;
+}
+
+.profile-container img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.profile-name h2 {
+  font-size: 100%;
+}
+
+h5 {
+  text-align: center;
+  line-height: 0;
+}
+
+.detail-rating {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0;
+}
+
+.profile-name p{
+  height: 50px;
+  line-height: 10px;
+}
+
+@media screen and (max-width: 520px) {
+  .container-content {
+    display: block;
+  }
+  .left-content {
+    max-width: 100%;
+  }
+  .left-content img {
+    width: 100%;
+    position: sticky;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .comment {
+    display: block;
+  }
+  .left-comment {
+    width: 100%;
+    padding: 2%;
+  }
+  .container-right {
+    margin: 20px;
+  }
+}
