@@ -37,6 +37,7 @@ small {
 
 .left-content img {
   width: 100%;
+  min-height: 20em;
   position: sticky;
   top: 50px;
   border: 5px solid;
@@ -246,7 +247,8 @@ main .container-comments {
 }
 
 .profile-container img {
-  width: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin: 10px;
   -webkit-border-radius: 50%;
@@ -272,7 +274,7 @@ h5 {
 
 .profile-name p{
   height: 50px;
-  line-height: 10px;
+  line-height: 15px;
 }
 
 @media screen and (max-width: 520px) {

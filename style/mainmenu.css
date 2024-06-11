@@ -225,6 +225,7 @@ header .iHamburger.open {
   border-radius: 2px;
   padding: 2%;
   margin: 1%;
+  min-height: 300px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -238,6 +239,7 @@ a{
 
 .productimg {
   width: 100%;
+  height: 9em;
   display: block;
   margin: 0 auto !important;
 }
