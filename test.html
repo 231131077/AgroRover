@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container-product {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            flex: 1 1 calc(25% - 10px);
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        .product-info {
+            margin-bottom: 5px;
+        }
+        .product-price {
+            font-size: 14px;
+            text-decoration: line-through;
+            color: red;
+        }
+        .product-discount-price {
+            font-size: 14px;
+            color: green;
+            font-weight: bold;
+        }
+        .badge {
+            display: inline-block;
+            padding: 2px 5px;
+            background-color: red;
+            color: white;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .footer section {
+            flex: 1 1 calc(45% - 10px);
+            margin-bottom: 10px;
+        }
+        .footer a {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .product {
+                flex: 1 1 calc(33.333% - 10px);
+            }
+        }
+        @media (max-width: 900px) {
+            .product {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+        @media (max-width: 600px) {
+            .product {
+                flex: 1 1 calc(50% - 10px);
+            }
+            .footer section {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="container-product">
+        <h2>Rekomendasi Untuk Kamu,</h2>
+        <section class="product-list">
+            <!-- Product Item -->
+            <section class="product">
+                <img src="https://placehold.co/150x150" alt="Kangkung Segar">
+                <section class="badge">Diskon 15%</section>
+                <section class="product-title">Kangkung Segar</section>
+                <section class="product-info">1kg</section>
+                <section class="product-price">Rp. 15.000</section>
+                <section class="product-discount-price">Rp. 12.750</section>
+            </section>
+            <!-- Product Item -->
+            <section class="product">
+                <img src="https://placehold.co/150x150" alt="Cabai Rawit">
+                <section class="badge">Gratis Ongkir</section>
+                <section class="product-title">Cabai Rawit</section>
+                <section class="product-info">1kg</section>
+                <section class="product-discount-price">Rp. 20.000</section>
+            </section>
+            <!-- Product Item -->
+            <section class="product">
+                <img src="https://placehold.co/150x150" alt="Lorem Ipsum">
+                <section class="badge">Paling Laris</section>
+                <section class="product-title">Lorem Ipsum</section>
+                <section class="product-info">1kg</section>
+                <section class="product-discount-price">Rp. 25.000</section>
+            </section>
+            <!-- Product Item -->
+            <section class="product">
+                <img src="https://placehold.co/150x150" alt="Wortel Baru Panen">
+                <section class="badge">Diskon 32%</section>
+                <section class="product-title">Wortel Baru Panen</section>
+                <section class="product-info">1kg</section>
+                <section class="product-price">Rp. 15.000</section>
+                <section class="product-discount-price">Rp. 10.200</section>
+            </section>
+            <!-- Additional product items go here -->
+        </section>
+        <section class="footer">
+            <section class="follow-us">
+                <h3>Ikuti Kami</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </section>
+            <section class="customer-service">
+                <h3>Layanan Pelanggan</h3>
+                <a href="#">Bantuan</a>
+                <a href="#">Metode Pembayaran</a>
+                <a href="#">AgroPay</a>
+                <a href="#">Mobile Banking</a>
+            </section>
+        </section>
+    </article>
+</body>
+
+</html>

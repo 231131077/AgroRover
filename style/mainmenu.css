@@ -20,13 +20,13 @@ nav {
   width: 250px;
 }
 
-#mdiv {
+#msection {
   width: 25px;
   height: 25px;
   cursor: pointer;
 }
 
-.mdiv {
+.msection {
   height: 25px;
   width: 4px;
   background-color: rgb(255, 255, 255);
@@ -215,59 +215,53 @@ header .iHamburger.open {
 }
 
 /* RECOMMEND ITEMS CSS */
-.shop .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+.container-product {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
-
-.shop .container .item {
-  border: 1px solid;
-  border-radius: 2px;
-  padding: 2%;
-  height: 100%;
-  min-height: 10em;
-  max-height: 23em;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
 }
-
-a {
-  color: black;
-  text-decoration: none;
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  flex: 1 1 calc(25% - 10px);
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
-
-.productimg {
+.product img {
   width: 100%;
-  height: 100%;
-  max-height: 13em;
-  display: block;
-  margin: 0 auto !important;
+  height: auto;
 }
-
-.text-icon {
-  background: #b10000;
-  width: fit-content;
-  padding: 1%;
-  border-radius: 10%;
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+.product-info {
+  margin-bottom: 5px;
+}
+.product-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: red;
+}
+.product-discount-price {
+  font-size: 14px;
+  color: green;
+  font-weight: bold;
+}
+.badge {
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: red;
   color: white;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
-}
-
-.shop .item .text {
-  line-height: 5px;
-}
-
-.shop a {
-  margin: 10px;
-}
-
-.desc {
-  color: grey;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
 
 /* ANIMATION AUTO SCROLL ADSENSE CSS */
@@ -535,5 +529,26 @@ footer .item {
 @media screen and (max-width: 1213px) {
   .wrapperAd2 {
     display: inline;
+  }
+}
+
+
+/* Media Query for Items Product */
+@media (max-width: 1200px) {
+  .product {
+      flex: 1 1 calc(33.333% - 10px);
+  }
+}
+@media (max-width: 900px) {
+  .product {
+      flex: 1 1 calc(50% - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .product {
+      flex: 1 1 calc(50% - 10px);
+  }
+  .footer section {
+      flex: 1 1 100%;
   }
 }
