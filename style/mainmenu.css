@@ -215,6 +215,7 @@ header .iHamburger.open {
 }
 
 /* RECOMMEND ITEMS CSS */
+<<<<<<< HEAD
 
 .product-section .pro-collection {
   display: flex;
@@ -310,6 +311,55 @@ del {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   margin: 0;
+=======
+.container-product {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  flex: 1 1 calc(25% - 10px);
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.product img {
+  width: 100%;
+  height: auto;
+}
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+.product-info {
+  margin-bottom: 5px;
+}
+.product-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: red;
+}
+.product-discount-price {
+  font-size: 14px;
+  color: green;
+  font-weight: bold;
+}
+.badge {
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 5px;
+>>>>>>> ecd4b0f493c5f5f7b9d54a1ed6f7a5a52db6748d
 }
 
 /* ANIMATION AUTO SCROLL ADSENSE CSS */
@@ -600,5 +650,26 @@ footer .item {
 @media screen and (max-width: 1213px) {
   .wrapperAd2 {
     display: inline;
+  }
+}
+
+
+/* Media Query for Items Product */
+@media (max-width: 1200px) {
+  .product {
+      flex: 1 1 calc(33.333% - 10px);
+  }
+}
+@media (max-width: 900px) {
+  .product {
+      flex: 1 1 calc(50% - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .product {
+      flex: 1 1 calc(50% - 10px);
+  }
+  .footer section {
+      flex: 1 1 100%;
   }
 }
