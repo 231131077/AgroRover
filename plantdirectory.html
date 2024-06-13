@@ -1,434 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:site_name" content="AgroRover" />
-    <link
-      rel="shortcut icon"
-      href="assets/favicon/favicon.ico"
-      image="/x-icon"
-    />
-    <meta
-      property="og:title"
-      content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani"
-    />
-    <link rel="stylesheet" href="style/mainmenu.css" />
-    <link rel="stylesheet" href="style/plantdirectory.css" />
-    <script>
-      document.getElementById("dropdown");
-    </script>
-    <script>
-      function openNav() {
-        document.querySelector("body").classList.toggle("wrap");
-        document.querySelector("aside").classList.toggle("active");
-      }
-    </script>
-    <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
-  </head>
 
-  <body>
-    <!-- SIDE BAR MENU -->
-    <aside>
-      <nav>
-        <ul>
-          <li>
-            <section id="mdiv" onclick="openNav()">
-              <section class="mdiv">
-                <section class="md"></section>
-              </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:site_name" content="AgroRover" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" image="/x-icon" />
+  <meta property="og:title" content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani" />
+  <link rel="stylesheet" href="style/mainmenu.css" />
+  <link rel="stylesheet" href="style/plantdirectory.css" />
+  <script>
+    document.getElementById("dropdown");
+  </script>
+  <script>
+    function openNav() {
+      document.querySelector("body").classList.toggle("wrap");
+      document.querySelector("aside").classList.toggle("active");
+    }
+  </script>
+  <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
+</head>
+
+<body>
+  <!-- SIDE BAR MENU -->
+  <aside>
+    <nav>
+      <ul>
+        <li>
+          <section id="msection" onclick="openNav()">
+            <section class="msection">
+              <section class="md"></section>
             </section>
-          </li>
-          <li><a href="mainmenu.html">Beranda</a></li>
-          <li><a href="">Produk</a></li>
-          <li><a href="">Kategori</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="akunanda.html">Akun Anda</a></li>
-          <li><a href="">Toko Anda</a></li>
-          <li><a href="plantdirectory.html">Panduan Pertumbuhan</a></li>
-          <li><a href="">Panduan Kondisi Tanah dan Pupuk</a></li>
-          <li><a href="login.html">Keluar</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <!-- INI ADALAH OPENING HEADER -->
-    <header>
-      <form action="mainmenu.html" method="GET">
-        <table>
-          <caption>
-            Ikuti Kami di,
-          </caption>
-          <tr>
-            <td><img src="assets/logo/logo.png" alt="Logo" /></td>
-            <section class="containerSearch">
-              <td class="search-bar">
-                <input
-                  type="search"
-                  placeholder="Cari bahan yang anda inginkan..."
-                />
-              </td>
-              <td>
-                <button type="submit" class="searchBtn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    class="bi bi-search"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                    />
-                  </svg>
-                </button>
-              </td>
-            </section>
-            <td class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                class="bi bi-cart-dash-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                class="bi bi-bell-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
-                />
-              </svg>
-              <svg
-                onclick="openNav()"
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="currentColor"
-                class="iHamburger"
-                viewBox="0 1 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-                />
-              </svg>
+          </section>
+        </li>
+        <li><a href="mainmenu.html">Beranda</a></li>
+        <li><a href="">Produk</a></li>
+        <li><a href="">Kategori</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="akunanda.html">Akun Anda</a></li>
+        <li><a href="">Toko Anda</a></li>
+        <li><a href="plantdirectory.html">Panduan Pertumbuhan</a></li>
+        <li><a href="">Panduan Kondisi Tanah dan Pupuk</a></li>
+        <li><a href="login.html">Keluar</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- INI ADALAH OPENING HEADER -->
+  <header>
+    <form action="mainmenu.html" method="GET">
+      <table>
+        <caption>
+          Ikuti Kami di,
+        </caption>
+        <tr>
+          <td><img src="assets/logo/logo.png" alt="Logo" /></td>
+          <section class="containerSearch">
+            <td class="search-bar">
+              <input type="search" placeholder="Cari bahan yang anda inginkan..." />
             </td>
+            <td>
+              <button type="submit" class="searchBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+              </button>
+            </td>
+          </section>
+          <td class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+              class="bi bi-cart-dash-fill" viewBox="0 0 16 16">
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bell-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+            </svg>
+            <svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="iHamburger" viewBox="0 1 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </header>
+  <!-- INI ADALAH CLOSING HEADER -->
+  <section>
+    <h1>Title</h1>
+  </section>
+  <main>
+    <section id="dropdown" onchange="dropdown">
+      <select name="Pilihan" id="jenis">
+        <option value="tumbuhan">Tumbuhan</option>
+        <option value="buah">Buah</option>
+        <option value="rempah">Rempah</option>
+      </select>
+    </section>
+    <section class="title">
+      <h2>Title</h2>
+    </section>
+    <section class="container">
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
           </tr>
         </table>
-      </form>
-    </header>
-    <!-- INI ADALAH CLOSING HEADER -->
-    <section>
-      <h1>Title</h1>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
+      <section class="itemPlant">
+        <table>
+          <tr>
+            <th>
+              <img src="https://picsum.photos/1440/1080" alt="image1" />
+            </th>
+          </tr>
+          <tr>
+            <th>Lorem</th>
+          </tr>
+          <tr>
+            <td class="desc">Ini deskripsi ya ges</td>
+          </tr>
+        </table>
+      </section>
     </section>
-    <main>
-      <section id="dropdown" onchange="dropdown">
-        <select name="Pilihan" id="jenis">
-          <option value="tumbuhan">Tumbuhan</option>
-          <option value="buah">Buah</option>
-          <option value="rempah">Rempah</option>
-        </select>
-      </section>
-      <section class="title"><h2>Title</h2></section>
-      <section class="container">
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
+  </main>
+  <footer>
+    <section class="container">
+      <section class="list">
+        <section class="item">
+          <h1>Ikuti Kami</h1>
+          <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Tiktok</li>
+            <li>Kampus Pengembang</li>
+          </ul>
         </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
+        <section class="item">
+          <h1>Layanan Pelanggan</h1>
+          <ul>
+            <li>Bantuan</li>
+            <li>Metode Pembayaran</li>
+            <li>Hubungi Kami</li>
+            <li>Gratis Ongkir</li>
+            <li>AgroPay</li>
+            <li>Agro Coins</li>
+            <li>Agro Voucher</li>
+          </ul>
         </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
-        </section>
-        <section class="itemPlant">
-          <table>
-            <tr>
-              <th>
-                <img src="https://picsum.photos/1440/1080" alt="image1" />
-              </th>
-            </tr>
-            <tr>
-              <th>Lorem</th>
-            </tr>
-            <tr>
-              <td class="desc">Ini deskripsi ya ges</td>
-            </tr>
-          </table>
+        <section class="item">
+          <h1>Metode Pembayaran</h1>
+          <ul>
+            <li>AgroPay</li>
+            <li>Mobile Banking</li>
+            <li>Virtual Account</li>
+            <li>Indomaret</li>
+            <li>Alfamidi</li>
+            <li>Alfamart</li>
+          </ul>
         </section>
       </section>
-    </main>
-    <footer>
-      <section class="container">
-        <section class="list">
-          <section class="item">
-            <h1>Ikuti Kami</h1>
-            <ul>
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>Tiktok</li>
-              <li>Kampus Pengembang</li>
-            </ul>
-          </section>
-          <section class="item">
-            <h1>Layanan Pelanggan</h1>
-            <ul>
-              <li>Bantuan</li>
-              <li>Metode Pembayaran</li>
-              <li>Hubungi Kami</li>
-              <li>Gratis Ongkir</li>
-              <li>AgroPay</li>
-              <li>Agro Coins</li>
-              <li>Agro Voucher</li>
-            </ul>
-          </section>
-          <section class="item">
-            <h1>Metode Pembayaran</h1>
-            <ul>
-              <li>AgroPay</li>
-              <li>Mobile Banking</li>
-              <li>Virtual Account</li>
-              <li>Indomaret</li>
-              <li>Alfamidi</li>
-              <li>Alfamart</li>
-            </ul>
-          </section>
-        </section>
+    </section>
+    <section class="watermark">
+      <section>
+        <p>Copyright &copy; 2024 AgroRover. All Rights Reserved.</p>
       </section>
-      <section class="watermark">
-        <section>
-          <p>Copyright &copy; 2024 AgroRover. All Rights Reserved.</p>
-        </section>
-        <section class="univ">
-          <p>Universitas Mikroskil, Indonesia.</p>
-        </section>
+      <section class="univ">
+        <p>Universitas Mikroskil, Indonesia.</p>
       </section>
-    </footer>
-  </body>
+    </section>
+  </footer>
+</body>
+
 </html>

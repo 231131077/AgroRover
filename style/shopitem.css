@@ -37,6 +37,7 @@ small {
 
 .left-content img {
   width: 100%;
+  object-fit: cover;
   min-height: 20em;
   position: sticky;
   top: 50px;
@@ -75,10 +76,24 @@ small {
 
 .container-price {
   line-height: 0px;
+  display: block !important;
+}
+
+.container-price p{
+  font-size: 100% !important;
 }
 
 .text-icon {
-  line-height: 10px;
+  line-height: 100%;
+  padding: 5px;
+  width: fit-content;
+  color: aliceblue;
+  background: red;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .descAndInfo p {
@@ -202,10 +217,17 @@ main .container-comments {
 }
 .rate-comment {
   margin: 0;
+  top: 30px;
+  padding: 10px;
   align-items: center;
   justify-content: center;
   position: sticky;
-  border: 2px solid transparent;
+  border: 1px solid grey;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .wrapper-star {
@@ -257,6 +279,7 @@ main .container-comments {
   -o-border-radius: 50%;
 }
 
+
 .profile-name h2 {
   font-size: 100%;
 }
@@ -264,6 +287,10 @@ main .container-comments {
 h5 {
   text-align: center;
   line-height: 0;
+}
+
+h4{
+  font-size: 200%;
 }
 
 .detail-rating {
