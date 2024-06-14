@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin: 15px;
+}
+
+.full-payment {
+  display: flex;
+  margin: 0 50px;
+}
+
+.left-payment {
+  width: 50%;
+  top: 20px;
+}
+
+.sticky-left {
+  position: sticky !important;
+  top: 20px;
+}
+
+.container-destination,
+.container-delivery {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.left-payment .location,
+.container-delivery .truck {
+  width: fit-content;
+}
+
+.left-payment .location svg {
+  width: 25px;
+  height: 25px;
+  fill: rgb(255, 0, 0);
+}
+
+.container-delivery .truck svg {
+  width: 25px;
+  height: 25px;
+  fill: rgb(0, 0, 0);
+}
+
+.container-delivery .text {
+  width: 89% !important;
+  color: rgb(255, 0, 0);
+}
+
+.left-payment .text {
+  width: 80%;
+  color: rgb(0, 0, 0);
+}
+.left-payment .arrow {
+  width: fit-content;
+}
+.left-payment .arrow svg {
+  width: 20px;
+  height: 20px;
+  fill: rgb(0, 0, 0);
+}
+
+.delivery-option {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.delivery-option:hover {
+  border: 2px solid #014300;
+}
+
+.right-payment {
+  width: 100%;
+  margin-left: 20px;
+  background: #f4f4f4;
+}
+
+.payment-method,
+.order-detail,
+.total {
+  background: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.payment-selector {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.payment-selector option {
+  font-size: 16px;
+}
+.method-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.method-detail .logo {
+  width: 100px;
+  height: 30px;
+}
+
+.method-detail img {
+  padding-top: 5px;
+  object-fit: cover;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.order-detail .item-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border: 2px solid #f4f4f4;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.order-detail .item-container .image {
+  width: 100px;
+  height: 100px;
+}
+
+.order-detail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.order-detail .product-text {
+  width: 50%;
+}
+.order-detail .product-price {
+  width: 30%;
+  text-align: right;
+}
+
+.qty {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-qty {
+  text-align: right;
+}
+
+.details-ttl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  margin-bottom: 0;
+}
+
+.total button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #2b5d2a;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+footer p {
+  line-height: 20px;
+}
+
+aside ul {
+  padding: 20px 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    margin: 10px 0;
+  }
+  .payment-method,
+  .order-detail,
+  .total {
+    padding: 0px;
+  }
+
+  h3{
+    font-size: 120%;
+  }
+
+  .details-ttl {
+    padding: 10px;
+  }
+
+  .total button {
+    margin-top: 5px;
+  }
+
+  p{
+    font-size: 120%;
+  }
+
+  footer p{
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+
+  .full-payment {
+    display: block;
+    margin: 0 50px;
+  }
+
+  .left-payment {
+    width: 100%;
+  }
+
+  .right-payment {
+    margin-left: 0px;
+  }
+
+  
+
+  .order-detail img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+  }
+
+  .payment-method{
+    padding: 10px;
+  }
+
+  h3{
+    font-size: 120%;
+  }
+
+  p{
+    font-size: 120%;
+  }
+
+  footer p{
+    font-size: 80%;
+  }
+}

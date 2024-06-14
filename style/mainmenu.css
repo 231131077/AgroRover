@@ -122,7 +122,7 @@ header .topHead {
 }
 
 .searchBtn {
-  width: 100%;
+  width: 35px;
   height: 35px;
   cursor: pointer;
   border: none;
@@ -541,6 +541,8 @@ footer .item {
   .discount {
     width: 50%;
   }
+
+  
 }
 
 @media screen and (max-width: 520px) {
@@ -594,6 +596,10 @@ footer .item {
 
   .shop a {
     margin: 10px;
+  }
+
+  footer ul{
+    border-bottom: 1px solid #dadada;
   }
 }
 
