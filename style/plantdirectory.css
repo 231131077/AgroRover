@@ -7,34 +7,35 @@
 * {
   font-family: "Varela", sans-serif;
 }
+
 main {
   margin: 20px;
 }
 
 #jenis {
-  width: 22em;
+  width: 100%;
+  max-width: 22em;
   padding: 10px;
   font-size: 16px;
-  margin: 10px;
-  margin-left: 0;
+  margin: 10px 0;
 }
 
 img {
   width: 100%;
 }
 
-.container {
+.container-item {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
-.container table tr {
-  max-width: 20%;
+.container-item table tr {
+  max-width: 100%;
 }
 
 .itemPlant {
   background: white;
-  margin: 20px;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 1px 1px 12px black;
@@ -42,4 +43,42 @@ img {
 
 .desc {
   border-top: 1px solid #000;
+}
+
+/* Untuk layar sedang (tablet) */
+@media screen and (max-width: 1024px) {
+  .container-item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Untuk layar kecil (ponsel) */
+@media screen and (max-width: 768px) {
+  .container-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Untuk layar sangat kecil */
+@media screen and (max-width: 480px) {
+  .container-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search-bar,
+  .icon {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .search-bar input {
+    width: 80%;
+  }
+
+  .searchBtn {
+    width: 20%;
+  }
 }
