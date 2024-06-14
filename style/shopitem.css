@@ -131,12 +131,12 @@ small {
   padding: 10px;
   outline: none;
 }
-.container-button {
+.container-button, .btn-cart {
   max-width: 100%;
   display: block;
   margin: 10px 10px 10px 0;
 }
-.container-button svg {
+.btn-cart svg {
   margin: 0 5px;
 }
 .container-button button {
