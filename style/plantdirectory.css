@@ -46,10 +46,18 @@ img {
   border-top: 1px solid #000;
 }
 
+/* Untuk layar besar (tablet) */
+@media screen and (max-width: 1520px) {
+  .container-item {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+
 /* Untuk layar sedang (tablet) */
 @media screen and (max-width: 1024px) {
   .container-item {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -63,23 +71,8 @@ img {
 /* Untuk layar sangat kecil */
 @media screen and (max-width: 480px) {
   .container-item {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 600px) {
-  .search-bar,
-  .icon {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-  }
 
-  .search-bar input {
-    width: 80%;
-  }
-
-  .searchBtn {
-    width: 20%;
-  }
-}
