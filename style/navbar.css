@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+:root{
+  overflow-x: hidden;
+}
+
 header {
   height: 100%;
   padding: 0 40px;

@@ -6,6 +6,10 @@
   font-family: "Varela", sans-serif;
 }
 
+:root{
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
 }

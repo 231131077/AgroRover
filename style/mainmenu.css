@@ -1,8 +1,10 @@
 /* ROOT CSS */
+
 :root {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
   max-width: 1440px;
+  overflow-x: hidden;
 }
 
 body {
@@ -420,7 +422,7 @@ del {
 footer {
   align-items: center;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1200px;
   padding: 20px 20px;
   margin-top: 20px;
   background-color: black;
@@ -460,9 +462,15 @@ footer .item {
     max-height: 13.5rem;
     height: auto;
   }
+  :root{
+    max-width: 1440px !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  :root{
+    max-width: 1024px !important;
+  }
   * {
     font-size: 95%;
   }
@@ -510,6 +518,9 @@ footer .item {
 }
 
 @media screen and (max-width: 768px) {
+  :root{
+    max-width: 768px !important;
+  }
   .shop .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -546,6 +557,9 @@ footer .item {
 }
 
 @media screen and (max-width: 520px) {
+  :root{
+    max-width: 520px !important;
+  }
   .shop .container {
     display: grid;
     grid-template-columns: 1fr 1fr;

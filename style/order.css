@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root{
+  overflow-x: hidden;
+}
+
 main {
   margin: 15px;
 }

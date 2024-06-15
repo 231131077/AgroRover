@@ -2,6 +2,10 @@
   font-family: "Varela", sans-serif;
 }
 
+:root{
+  overflow-x: hidden;
+}
+
 .cover {
   max-width: 1440px;
   max-height: fit-content;

@@ -5,7 +5,9 @@
   box-sizing: border-box;
   font-family: "Varela", sans-serif;
 }
-
+:root{
+  overflow-x: hidden;
+}
 body {
   display: flex;
   justify-content: center;

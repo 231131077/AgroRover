@@ -2,6 +2,10 @@
   font-family: "Varela", sans-serif;
   top: 0;
 }
+
+:root{
+  overflow-x: hidden;
+}
 main {
   margin: 2% 5%;
   display: block;
