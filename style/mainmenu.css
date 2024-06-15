@@ -286,7 +286,7 @@ header .iHamburger.open {
   display: flex;
   align-items: center;
 }
-.container-price p{
+.container-price p {
   display: flex;
   align-items: center;
   font-size: 10px;
@@ -462,14 +462,16 @@ footer .item {
     max-height: 13.5rem;
     height: auto;
   }
-  :root{
+  :root {
     max-width: 1440px !important;
+    overflow-x: hidden;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  :root{
+  :root {
     max-width: 1024px !important;
+    overflow-x: hidden;
   }
   * {
     font-size: 95%;
@@ -518,8 +520,9 @@ footer .item {
 }
 
 @media screen and (max-width: 768px) {
-  :root{
+  :root {
     max-width: 768px !important;
+    overflow-x: hidden;
   }
   .shop .container {
     display: grid;
@@ -552,13 +555,12 @@ footer .item {
   .discount {
     width: 50%;
   }
-
-  
 }
 
 @media screen and (max-width: 520px) {
-  :root{
+  :root {
     max-width: 520px !important;
+    overflow-x: hidden;
   }
   .shop .container {
     display: grid;
@@ -612,7 +614,7 @@ footer .item {
     margin: 10px;
   }
 
-  footer ul{
+  footer ul {
     border-bottom: 1px solid #dadada;
   }
 }
