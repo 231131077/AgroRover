@@ -1,61 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:site_name" content="AgroRover" />
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" image="/x-icon" />
-    <link rel="stylesheet" href="style/register.css" />
-    <meta property="og:title" content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
-    <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
-  </head>
-  <body>
-    <main>
-      <section class="card">
-        <section>
-          <form action="">
-            <h1>SIGN UP</h1>
-            <section class="input-box">
-              <input type="text" placeholder="Nama Lengkap" required />
-            </section>
-            <section class="input-box">
-              <input type="lower" placeholder="Username" required />
-            </section>
-            <section class="input-box">
-              <input type="email" placeholder="Alamat Email" required />
-            </section>
-            <section class="input-box">
-              <input
-                type="tel"
-                type="number"
-                placeholder="Nomor Telepon"
-                required
-              />
-            </section>
-            <section class="input-box">
-              <input type="password" placeholder="Password" required />
-            </section>
-            <section class="input-box">
-              <input type="password" placeholder="Confirm Password" required />
-            </section>
-            <section class="remember-forgot">
-              <label> <input type="checkbox" required />Remember me </label>
-            </section>
-            <button type="submit"><a href="login.html">Sign Up</a></button>
-          </form>
-        </section>
-      </section>
 
-      <article>
-        <section class="right-logo">
-          <img src="assets/logo/logo.png" alt="" />
-          <p>Selamat Datang di AgroRover</p>
-        </section>
-      </article>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:site_name" content="AgroRover" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" image="/x-icon" />
+  <link rel="stylesheet" href="style/login.css" />
+  <meta property="og:title" content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
+</head>
+
+<body>
+  <main>
+    <form action="mainmenu.html" method="GET">
+      <img src="assets/logo/logo.png" alt="" />
+      <h1>SIGN UP</h1>
+      <p>Welcome to AgroRover</p>
+      <section class="input-box">
+        <input type="text" placeholder="Nama Lengkap" autofocus/>
+      </section>
+      <section class="input-box">
+        <input type="email" placeholder="Alamat Email" />
+      </section>
+      <section class="input-box">
+        <input type="tel" placeholder="Nomor Telepon" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+      </section>
+      <section class="input-box">
+        <input type="password" placeholder="Password" />
+      </section>
+      <section class="input-box">
+        <input type="password" placeholder="Konfirmasi Password" />
+      </section>
+      <legend >ABC</legend>
+      <a href="mainmenu.html">
+        <button type="submit">Sign Up</button>
+      </a>
+      <section class="register">
+        <p>have an account? <a href="login.html">Login</a></p>
+      </section>
+    </form>
+  </main>
+</body>
+
 </html>

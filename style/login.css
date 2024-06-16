@@ -123,3 +123,10 @@ main button {
   text-decoration: none;
   font-weight: 600;
 }
+
+
+@media screen and (max-width: 768px) {
+  main{
+    margin: 5%;
+  }
+}
