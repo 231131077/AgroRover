@@ -1,0 +1,93 @@
+:root {
+  max-width: 1440px;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.left-profile {
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+}
+
+.shop-details h3,
+.shop-details p {
+  margin: 0;
+  padding: 0;
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.shop-image img {
+  width: 100px;
+  border: 1px solid;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  margin: 0 20px;
+}
+
+.profile-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-button a {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mid-profile,
+.right-profile {
+  width: 200px;
+  margin: 0 50px;
+}
+
+.followers,
+.following {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.mid-right {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .last-item {
+    display: none;
+  }
+}

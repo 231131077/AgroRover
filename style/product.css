@@ -5,6 +5,10 @@
     overflow-x: hidden;
 }
 
+*{
+    font-family: "Poppins", sans-serif;
+
+}
 
 footer p{
     line-height: 20px;

@@ -1,12 +1,16 @@
 body {
   max-width: 1440px ;
-  font-family: "Varela", sans-serif;
   background-color: #f8f9fa;
   margin: 0;
   padding: 0;
 }
 :root{
   overflow-x: hidden;
+}
+
+*{
+  font-family: "Poppins", sans-serif;
+
 }
 
 main {
