@@ -1,0 +1,48 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.tanah-or-pupuk {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+}
+
+.tanah-or-pupuk button {
+    background-color: white;
+    border: 2px solid #9ece32;
+    color: #9ece32;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tanah-or-pupuk button:hover, .tanah-or-pupuk button.active {
+    background-color: #9ece32;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    display: block;
+}
+
+.active {
+    display: block;
+}
+
+article {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.short-text + .full-text {
+    display: none;
+}

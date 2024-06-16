@@ -15,9 +15,116 @@
     rel="stylesheet">
   <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
   <script>
-    function dropdown() {
-      var changeName = document.getElementById("dropdown").value;
-    };
+function dropdown() {
+  var selectedValue = document.getElementById("jenis").value;
+  var data = {
+    tumbuhan: [
+      {
+        img: "/assets/image/shop-item/sayur/Cabai Rawit.jpg",
+        title: "Cabai Rawit",
+        desc: "Cabai rawit, yang kaya akan capsaicin, dapat membantu meningkatkan metabolisme, meredakan nyeri, dan memberikan manfaat antioksidan yang baik untuk kesehatan."
+      },
+      {
+        img: "/assets/image/shop-item/sayur/kangkung.jpg",
+        title: "Kangkung",
+        desc: "Kangkung, yang kaya akan serat, vitamin A, dan zat besi, dapat membantu menjaga kesehatan pencernaan, meningkatkan daya tahan tubuh, dan mencegah anemia."
+      },
+      {
+        img: "/assets/image/shop-item/sayur/kubis.jpg",
+        title: "Kubis",
+        desc: "Kubis, yang kaya akan vitamin C, K, dan serat, dapat membantu meningkatkan sistem kekebalan tubuh, mendukung kesehatan tulang, dan menjaga pencernaan yang sehat."
+      },
+      {
+        img: "/assets/image/shop-item/sayur/paprika.jpg",
+        title: "Paprika",
+        desc: "Paprika, yang kaya akan vitamin C, A, dan antioksidan, dapat membantu meningkatkan sistem kekebalan tubuh, menjaga kesehatan mata, dan melindungi sel-sel dari kerusakan oksidatif."
+      },
+      {
+        img: "/assets/image/shop-item/sayur/sawijpg.jpg",
+        title: "Sawi",
+        desc: "Sawi, yang kaya akan vitamin K, C, dan serat, dapat membantu mendukung kesehatan tulang, meningkatkan sistem kekebalan tubuh, dan menjaga pencernaan yang sehat."
+      },
+      {
+        img: "/assets/image/shop-item/sayur/wortel.jpeg",
+        title: "Wortel",
+        desc: "Wortel, yang kaya akan beta-karoten, serat, dan vitamin A, dapat membantu menjaga kesehatan mata, meningkatkan sistem kekebalan tubuh, dan mendukung pencernaan yang sehat."
+      }
+    ],
+    buah: [
+      {
+        img: "/assets/image/shop-item/buah-buahan/blackberry.jpg",
+        title: "Blackberry",
+        desc: "Blackberry, yang kaya akan serat, vitamin C, dan antioksidan, dapat membantu meningkatkan sistem kekebalan tubuh, mendukung kesehatan pencernaan, dan melindungi tubuh dari kerusakan akibat radikal bebas."
+      },
+      {
+        img: "/assets/image/shop-item/buah-buahan/jeruk.jpg",
+        title: "Jeruk",
+        desc: "Jeruk, yang kaya akan vitamin C, serat, dan antioksidan, dapat membantu meningkatkan sistem kekebalan tubuh, mendukung kesehatan kulit, dan menjaga pencernaan yang sehat."
+      },
+      {
+        img: "/assets/image/shop-item/buah-buahan/Kiwi.png",
+        title: "Kiwi",
+        desc: "Kiwi, yang kaya akan vitamin C, K, serat, dan antioksidan, dapat membantu meningkatkan sistem kekebalan tubuh, mendukung kesehatan pencernaan, dan memperbaiki kualitas tidur."
+      },
+      {
+        img: "/assets/image/shop-item/buah-buahan/nanas.jpg",
+        title: "Nanas",
+        desc: "Nanas, yang kaya akan vitamin C, mangan, dan enzim bromelain, dapat membantu meningkatkan sistem kekebalan tubuh, mendukung kesehatan pencernaan, dan mengurangi peradangan."
+      },
+      {
+        img: "/assets/image/shop-item/buah-buahan/semangka.jpg",
+        title: "Semangka",
+        desc: "Semangka, yang kaya akan vitamin A, vitamin C, dan likopen, dapat membantu menjaga hidrasi, meningkatkan kesehatan jantung, dan memberikan efek antioksidan untuk melindungi sel-sel tubuh."
+      },
+      {
+        img: "/assets/image/shop-item/buah-buahan/strawberry.jpg",
+        title: "Strawberry",
+        desc: "Strawberry, yang kaya akan vitamin C, serat, dan antioksidan, dapat membantu meningkatkan sistem kekebalan tubuh, mendukung kesehatan kulit, dan mengurangi risiko peradangan."
+      }
+    ],
+    protein: [
+      {
+        img: "/assets/image/shop-item/protein/daging sapi.jpg",
+        title: "Daging Sapi",
+        desc: "Daging sapi, yang kaya akan protein, zat besi, dan vitamin B12, dapat membantu membangun otot, menjaga kesehatan sel darah merah, dan mendukung fungsi sistem saraf yang baik."
+      },
+      {
+        img: "/assets/image/shop-item/protein/salmon.jpg",
+        title: "Salmon",
+        desc: "Salmon, yang kaya akan asam lemak omega-3, protein berkualitas tinggi, dan vitamin D, dapat membantu meningkatkan kesehatan jantung, mendukung fungsi otak yang baik, dan mengurangi peradangan dalam tubuh."
+      },
+      {
+        img: "/assets/image/shop-item/protein/susu-sapi.jpeg",
+        title: "Susu Sapi",
+        desc: "Susu sapi, yang kaya akan kalsium, protein, dan vitamin D, dapat membantu membangun dan memperkuat tulang, menjaga kesehatan gigi, dan mendukung pertumbuhan dan perkembangan tubuh yang sehat."
+      },
+      {
+        img: "/assets/image/shop-item/protein/telurayam.jpg",
+        title: "Telur Ayam",
+        desc: "Telur ayam, yang kaya akan protein, vitamin B12, dan selenium, dapat membantu membangun dan memperbaiki jaringan tubuh, mendukung kesehatan otak dan saraf, serta menjaga kesehatan sel darah merah."
+      },
+      {
+        img: "/assets/image/shop-item/protein/telur-bebek.jpeg",
+        title: "Telur Bebek",
+        desc: "Telur bebek, yang kaya akan protein, vitamin A, dan zat besi, dapat membantu membangun dan memperbaiki jaringan tubuh, mendukung kesehatan mata, dan meningkatkan kekebalan tubuh."
+      },
+      {
+        img: "/assets/image/shop-item/protein/tempe.jpg",
+        title: "Tempe",
+        desc: "Tempe, yang kaya akan protein, serat, vitamin B, dan mineral seperti zat besi dan kalsium, dapat membantu dalam mempertahankan kesehatan pencernaan, meningkatkan metabolisme, dan mendukung pertumbuhan otot dan tulang."
+      }
+    ]
+  };
+
+  var items = data[selectedValue];
+
+  for (var i = 0; i < items.length; i++) {
+    document.getElementById("img" + (i + 1)).src = items[i].img;
+    document.getElementById("title" + (i + 1)).innerText = items[i].title;
+    document.getElementById("desc" + (i + 1)).innerText = items[i].desc;
+  }
+}
+
   </script>
   <script>
     function openNav() {
@@ -46,7 +153,7 @@
         <li><a href="akunanda.html">Akun Anda</a></li>
         <li><a href="">Toko Anda</a></li>
         <li><a href="plantdirectory.html">Panduan Pertumbuhan</a></li>
-        <li><a href="">Panduan Kondisi Tanah dan Pupuk</a></li>
+        <li><a href="dirtncompost.html">Panduan Kondisi Tanah dan Pupuk</a></li>
         <li><a href="login.html">Keluar</a></li>
       </ul>
     </nav>
@@ -101,8 +208,8 @@
     <h1>Title</h1>
   </section>
   <main>
-    <section id="dropdown" onchange="dropdown()">
-      <select name="Pilihan" id="jenis">
+    <section>
+      <select name="Pilihan" id="jenis" onchange="dropdown()">
         <option value="tumbuhan">Tumbuhan</option>
         <option value="buah">Buah</option>
         <option value="protein">Protein</option>
@@ -112,98 +219,86 @@
       <h2>Title</h2>
     </section>
     <section class="container-item">
-      <section class="itemPlant">
+      <section class="itemPlant" id="item1">
         <table>
           <tr>
-            <th>
-              <img src="/assets/image/shop-item/sayur/Cabai Rawit.jpg" alt="cabairawit" />
-            </th>
+            <th><img src="/assets/image/shop-item/sayur/Cabai Rawit.jpg" alt="cabairawit" id="img1"/></th>
           </tr>
           <tr>
-            <th>Cabai Rawit</th>
+            <th id="title1">Cabai Rawit</th>
           </tr>
           <tr>
-            <td class="desc">Cabai rawit, yang kaya akan capsaicin, dapat membantu meningkatkan metabolisme, meredakan nyeri, dan memberikan manfaat antioksidan yang baik untuk kesehatan.</td>
+            <td class="desc" id="desc1">Cabai rawit, yang kaya akan capsaicin, dapat membantu meningkatkan metabolisme, meredakan nyeri, dan memberikan manfaat antioksidan yang baik untuk kesehatan.</td>
           </tr>
         </table>
       </section>
-      <section class="itemPlant">
+      <section class="itemPlant" id="item2">
         <table>
           <tr>
-            <th>
-              <img src="assets/image/shop-item/sayur/kangkung.jpg" alt="kangkung" />
-            </th>
+            <th><img src="/assets/image/shop-item/sayur/kangkung.jpg" alt="kangkung" id="img2"/></th>
           </tr>
           <tr>
-            <th>Kangkung</th>
+            <th id="title2">Kangkung</th>
           </tr>
           <tr>
-            <td class="desc">Kangkung, yang kaya akan serat, vitamin A, dan zat besi, dapat membantu menjaga kesehatan pencernaan, meningkatkan daya tahan tubuh, dan mencegah anemia.</td>
+            <td class="desc" id="desc2">Kangkung, yang kaya akan serat, vitamin A, dan zat besi, dapat membantu menjaga kesehatan pencernaan, meningkatkan daya tahan tubuh, dan mencegah anemia.</td>
           </tr>
         </table>
       </section>
-      <section class="itemPlant">
+      <section class="itemPlant" id="item3">
         <table>
           <tr>
-            <th>
-              <img src="/assets/image/shop-item/sayur/kubis.jpg" alt="kubis"/>
-            </th>
+            <th><img src="/assets/image/shop-item/sayur/kubis.jpg" alt="kubis" id="img3"/></th>
           </tr>
           <tr>
-            <th>Kubis</th>
+            <th id="title3">Kubis</th>
           </tr>
           <tr>
-            <td class="desc">Kubis, yang kaya akan vitamin C, K, dan serat, dapat membantu meningkatkan sistem kekebalan tubuh, mendukung kesehatan tulang, dan menjaga pencernaan yang sehat.</td>
+            <td class="desc" id="desc3">Kubis, yang kaya akan vitamin C, K, dan serat, dapat membantu meningkatkan sistem kekebalan tubuh, mendukung kesehatan tulang, dan menjaga pencernaan yang sehat.</td>
           </tr>
         </table>
       </section>
-      <section class="itemPlant">
+      <section class="itemPlant" id="item4">
         <table>
           <tr>
-            <th>
-              <img src="assets/image/shop-item/sayur/paprika.jpg" alt="paprika" />
-            </th>
+            <th><img src="/assets/image/shop-item/sayur/paprika.jpg" alt="paprika" id="img4"/></th>
           </tr>
           <tr>
-            <th>Paprika</th>
+            <th id="title4">Paprika</th>
           </tr>
           <tr>
-            <td class="desc">Paprika, yang kaya akan vitamin C, A, dan antioksidan, dapat membantu meningkatkan sistem kekebalan tubuh, menjaga kesehatan mata, dan melindungi sel-sel dari kerusakan oksidatif.</td>
+            <td class="desc" id="desc4">Paprika, yang kaya akan vitamin C, A, dan antioksidan, dapat membantu meningkatkan sistem kekebalan tubuh, menjaga kesehatan mata, dan melindungi sel-sel dari kerusakan oksidatif.</td>
           </tr>
         </table>
       </section>
-      <section class="itemPlant">
+      <section class="itemPlant" id="item5">
         <table>
           <tr>
-            <th>
-              <img src="assets/image/shop-item/sayur/sawijpg.jpg" alt="sawi" />
-            </th>
+            <th><img src="/assets/image/shop-item/sayur/sawijpg.jpg" alt="sawi" id="img5"/></th>
           </tr>
           <tr>
-            <th>Sawi</th>
+            <th id="title5">Sawi</th>
           </tr>
           <tr>
-            <td class="desc">Sawi, yang kaya akan vitamin K, C, dan serat, dapat membantu mendukung kesehatan tulang, meningkatkan sistem kekebalan tubuh, dan menjaga pencernaan yang sehat.</td>
+            <td class="desc" id="desc5">Sawi, yang kaya akan vitamin K, C, dan serat, dapat membantu mendukung kesehatan tulang, meningkatkan sistem kekebalan tubuh, dan menjaga pencernaan yang sehat.</td>
           </tr>
         </table>
       </section>
-      <section class="itemPlant">
+      <section class="itemPlant" id="item6">
         <table>
           <tr>
-            <th>
-              <img src="/assets/image/shop-item/sayur/wortel.jpeg" alt="wortel" />
-            </th>
+            <th><img src="/assets/image/shop-item/sayur/wortel.jpeg" alt="wortel" id="img6"/></th>
           </tr>
           <tr>
-            <th>Wortel</th>
+            <th id="title6">Wortel</th>
           </tr>
           <tr>
-            <td class="desc">Wortel, yang kaya akan beta-karoten, serat, dan vitamin A, dapat membantu menjaga kesehatan mata, meningkatkan sistem kekebalan tubuh, dan mendukung pencernaan yang sehat.</td>
+            <td class="desc" id="desc6">Wortel, yang kaya akan beta-karoten, serat, dan vitamin A, dapat membantu menjaga kesehatan mata, meningkatkan sistem kekebalan tubuh, dan mendukung pencernaan yang sehat.</td>
           </tr>
         </table>
       </section>
     </section>
-  </main>
+  </main>  
   <footer>
     <section class="container">
       <section class="list">
@@ -250,13 +345,6 @@
       </section>
     </section>
   </footer>
-
-  <script>
-    function openNav() {
-      document.querySelector("body").classList.toggle("wrap");
-      document.querySelector("aside").classList.toggle("active");
-    }
-  </script>
 </body>
 
 </html>

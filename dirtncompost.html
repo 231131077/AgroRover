@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="AgroRover" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" image="/x-icon" />
+    <link rel="stylesheet" href="style/mainmenu.css" />
+    <link rel="stylesheet" href="style/dirtncompost.css" />
+    <meta property="og:title" content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
+  <script>
+    function openNav() {
+      document.querySelector("body").classList.toggle("wrap");
+      document.querySelector("aside").classList.toggle("active");
+    }
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tanahButton = document.getElementById('tanah-button');
+    const pupukButton = document.getElementById('pupuk-button');
+    const tanahSection = document.getElementById('tanah-section');
+    const pupukSection = document.getElementById('pupuk-section');
+    const readMoreButtons = document.querySelectorAll('.read-more');
+
+    tanahButton.addEventListener('click', () => {
+        tanahSection.classList.add('active');
+        pupukSection.classList.remove('active');
+        tanahButton.classList.add('active');
+        pupukButton.classList.remove('active');
+    });
+
+    pupukButton.addEventListener('click', () => {
+        pupukSection.classList.add('active');
+        tanahSection.classList.remove('active');
+        pupukButton.classList.add('active');
+        tanahButton.classList.remove('active');
+    });
+
+    readMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const article = button.parentElement;
+            const fullText = article.querySelector('.full-text');
+            if (fullText.style.display === 'none' || fullText.style.display === '') {
+                fullText.style.display = 'block';
+                button.textContent = 'Read Less';
+            } else {
+                fullText.style.display = 'none';
+                button.textContent = 'Read More';
+            }
+        });
+    });
+});
+</script>
+</head>
+<body>
+     <!-- SIDE BAR MENU -->
+  <aside>
+    <nav>
+      <ul>
+        <li>
+          <section id="msection" onclick="openNav()">
+            <section class="msection">
+              <section class="md"></section>
+            </section>
+          </section>
+        </li>
+        <li><a href="mainmenu.html">Beranda</a></li>
+        <li><a href="">Produk</a></li>
+        <li><a href="">Kategori</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="akunanda.html">Akun Anda</a></li>
+        <li><a href="">Toko Anda</a></li>
+        <li><a href="plantdirectory.html">Panduan Pertumbuhan</a></li>
+        <li><a href="dirtncompost.html">Panduan Kondisi Tanah dan Pupuk</a></li>
+        <li><a href="login.html">Keluar</a></li>
+      </ul>
+    </nav>
+  </aside>
+    <!-- INI ADALAH OPENING HEADER -->
+    <header>
+      <form action="mainmenu.html" method="GET">
+        <table>
+          <caption>
+            Ikuti Kami di,
+          </caption>
+          <tr>
+            <td><img src="assets/logo/logo.png" alt="Logo" /></td>
+            <section class="containerSearch">
+              <td class="search-bar">
+                <input type="search" placeholder="Cari mengenai tanah dan pupuk..." />
+              </td>
+              <td>
+                <button type="submit" class="searchBtn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                  </svg>
+                </button>
+              </td>
+            </section>
+            <td class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-cart-dash-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bell-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+              </svg>
+              <svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="iHamburger" viewBox="0 1 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+              </svg>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </header>
+    <!-- INI ADALAH CLOSING HEADER -->
+    <main>
+        <nav class="tanah-or-pupuk">
+            <button id="tanah-button" class="active">Tanah</button>
+            <button id="pupuk-button">Pupuk</button>
+        </nav>
+        <section id="tanah-section" class="active">
+            <article>
+                <h2 class="short-text">Tanah Aluvial</h2>
+                <section class="full-text">
+                    <h4>Karakteristik Aluvial</h4>
+                    <ul>
+                        <li>Aluvial memiliki tekstur yang halus. Namun butirannya belum tentu sama antara satu lokasi dengan lokasi lainnya.</li>
+                        <li>Memiliki kandung mineral cukup tinggi sehingga baik untuk tanaman.</li>
+                        <li>Berada di dataran rendah. Biasanya, lokasi aluvial dekat dengan aliran sungai. Tetapi bisa juga pada daerah yang dulunya berupa sungai namun saat ini sudah sepenuhnya terendapkan.</li>
+                    </ul>
+                    <p>Adapun manfaat dari tipe soil aluvial di bidang pertanian adalah digunakan sebagai area persawahan. Bisa juga dijadikan tempat untuk menanam palawija. Penggunaan aluvial sebagai area pertanian memberikan banyak manfaat bagi petani</p>
+                </section>
+                <button class="read-more">Read More</button>
+            </article>
+            <article>
+                <h2 class="short-text">Tanah Humus</h2>
+                <section class="full-text">
+                    <h4>Karakteristik Humus</h4>
+                    <ul>
+                        <li>Pada umumnya humus memiliki warna gelap seperti coklat gelap atau kehitam-hitaman.</li>
+                        <li>Terbentuk dari proses pelapukan, humus biasanya terdapat pada lapisan permukaan paling atas sehingga sifatnya cenderung tidak stabil terhadap faktor eksternal seperti suhu, kelembaban, dan lainnya.</li>
+                        <li>Teksturnya sangat gembur dan tidak padat seperti jenis-jenis tanah lain semisal tanah liat. Sehingga sangat baik untuk pertanian.</li>
+                        <li>Memiliki karakteristik sangat subur. Secara kimiawi, humus mengandung zat organik, beberapa di antaranya yaitu fenol, alifatik, asam karboksilat, dan hidroksida.</li>
+                        <li>Daya serapnya tinggi terhadap air sehingga baik untuk pertumbuhan tanaman.</li>
+                    </ul>
+                    <h4>Manfaat Humus</h4>
+                        <p>1. Bahan pembuat pupuk organik.</p>
+                        <p>Pupuk organik dipakai untuk mengoptimalkan kesuburan media tanam sehingga dapat dijadikan sebagai media tanam berkualitas. Selain humus, bahan pembuatan pupuk organik lainnya antara lain limbah organik, makanan, kotoran hewan, dan lainnya.</p>
+                        <p>2. Digunakan sebagai Media Tanam</p>
+                        <p>Selain sebagai campuran dalam pembuatan pupuk organik, humus juga banyak dipakai untuk media tanam secara langsung. Kandungan unsur haranya yang melimpah memungkinkan tanaman tumbuh subur dan sehat.</p>
+                </section>
+                <button class="read-more">Read More</button>
+            </article>
+        </section>
+
+        <section id="pupuk-section">
+            <article>
+                <h2>A</h2>
+                <p class="short-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="full-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque pharetra felis ut efficitur. Suspendisse potenti. Ut malesuada, massa et rhoncus eleifend, tellus tortor congue ipsum, et molestie nulla ex auctor metus. Phasellus ac mauris non purus suscipit.</p>
+                <button class="read-more">Read More</button>
+            </article>
+            <article>
+                <h2>A</h2>
+                <p class="short-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="full-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque pharetra felis ut efficitur. Suspendisse potenti. Ut malesuada, massa et rhoncus eleifend, tellus tortor congue ipsum, et molestie nulla ex auctor metus. Phasellus ac mauris non purus suscipit.</p>
+                <button class="read-more">Read More</button>
+            </article>
+            <article>
+                <h2>A</h2>
+                <p class="short-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="full-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque pharetra felis ut efficitur. Suspendisse potenti. Ut malesuada, massa et rhoncus eleifend, tellus tortor congue ipsum, et molestie nulla ex auctor metus. Phasellus ac mauris non purus suscipit. Nulla vehicula pretium ornare. Aenean eget mi id metus malesuada rhoncus. Donec ultrices lacus eget odio ultricies, non eleifend enim efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec fermentum nisl mi, a cursus felis sagittis ac. Donec nec enim in sapien gravida efficitur ut vitae tortor. Donec elit magna, rutrum id lacus ut, congue varius ipsum. Phasellus efficitur efficitur ipsum, a consectetur justo ornare ut. Vestibulum porta turpis sem, sed sodales augue consequat at. Etiam consectetur, urna sit amet feugiat iaculis, neque eros hendrerit dolor, at iaculis arcu urna ac nisi. In nibh felis, pretium quis sagittis sed, fringilla finibus augue. Vivamus at lectus urna. Nullam facilisis gravida risus id blandit. Phasellus eu enim interdum, tempus ligula id, rhoncus erat.</p>
+                <button class="read-more">Read More</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="container">
+          <section class="list">
+            <section class="item">
+              <h1>Ikuti Kami</h1>
+              <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Tiktok</li>
+                <li>Kampus Pengembang</li>
+              </ul>
+            </section>
+            <section class="item">
+              <h1>Layanan Pelanggan</h1>
+              <ul>
+                <li>Bantuan</li>
+                <li>Metode Pembayaran</li>
+                <li>Hubungi Kami</li>
+                <li>Gratis Ongkir</li>
+                <li>AgroPay</li>
+                <li>Agro Coins</li>
+                <li>Agro Voucher</li>
+              </ul>
+            </section>
+            <section class="item">
+              <h1>Metode Pembayaran</h1>
+              <ul>
+                <li>AgroPay</li>
+                <li>Mobile Banking</li>
+                <li>Virtual Account</li>
+                <li>Indomaret</li>
+                <li>Alfamidi</li>
+                <li>Alfamart</li>
+              </ul>
+            </section>
+          </section>
+        </section>
+        <section class="watermark">
+          <section>
+            <p>Copyright &copy; 2024 AgroRover. All Rights Reserved.</p>
+          </section>
+          <section class="univ">
+            <p>Universitas Mikroskil, Indonesia.</p>
+          </section>
+        </section>
+      </footer>
+    </body>
+    </html>
