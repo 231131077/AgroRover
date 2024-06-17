@@ -8,6 +8,7 @@
 }
 
 body {
+  margin-top: 150px;
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
@@ -59,6 +60,8 @@ aside {
   padding: 0;
   position: fixed;
   z-index: 999999999;
+  top: 0;
+  overflow: auto;
   right: -500px;
   width: 350px;
   height: 100%;
@@ -92,7 +95,11 @@ aside a {
 }
 
 /* HEADER CSS */
-
+header{
+  top: 0;
+  z-index: 99;
+  position: fixed;
+}
 header img {
   width: 50px;
   height: 50px;

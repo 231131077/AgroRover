@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 :root{
   overflow-x: hidden;
 }
@@ -20,12 +21,11 @@ main {
 
 .left-payment {
   width: 50%;
-  top: 20px;
 }
 
 .sticky-left {
   position: sticky !important;
-  top: 20px;
+  top: 100px;
 }
 
 .container-destination,

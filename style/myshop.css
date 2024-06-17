@@ -94,6 +94,11 @@
   display: block;
 }
 
+.img-ads img{
+  width: 100%;
+  max-width: 1440px;
+}
+
 .navbar-shop ul {
   cursor: pointer;
   margin: 0;
@@ -111,14 +116,52 @@
   text-align: center;
 }
 
-.shop-ads img{
+.shop-ads img {
   width: 100%;
+}
+.img-ads{
+  margin-bottom: 20px;
 }
 
 .navbar-shop ul li:hover {
   background: rgb(48, 75, 48);
   color: white;
 }
+
+.container-adsShop{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.wrapperAdShop{
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+}
+.wrapperAdShop .title{
+  color: #4caf50;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 5%;
+}
+.wrapperAdShop h2{
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
+}
+.wrapperAdShop .footer{
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
+  color: gray;
+}
+.wrapperAdShop img{
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .last-item {
     display: none;

@@ -1,16 +1,22 @@
 body {
-  max-width: 1440px ;
+  max-width: 1440px;
   background-color: #f8f9fa;
   margin: 0;
   padding: 0;
+
+  margin-top: 100px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
 }
-:root{
+:root {
   overflow-x: hidden;
 }
 
-*{
+* {
   font-family: "Poppins", sans-serif;
-
 }
 
 main {
