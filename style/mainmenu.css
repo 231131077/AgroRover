@@ -8,7 +8,7 @@
 }
 
 body {
-  margin-top: 150px;
+  margin-top: 120px;
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
@@ -16,11 +16,21 @@ body {
   -o-transition: 0.5s ease;
 }
 
+main{
+  width: 100%;
+  max-width: 1440px;
+}
+
 /* SIDE BAR */
 nav {
   top: 100px;
   right: 50px;
   width: 250px;
+}
+
+aside{
+  width: 100%;
+  max-width: 1440px;
 }
 
 #msection {
@@ -97,6 +107,7 @@ aside a {
 /* HEADER CSS */
 header{
   top: 0;
+  left: 0;
   z-index: 99;
   position: fixed;
 }
@@ -548,6 +559,10 @@ footer .item {
   :root {
     max-width: 768px !important;
     overflow-x: hidden;
+  }
+
+  body{
+    margin-top: 100px;
   }
   .shop .container {
     display: grid;

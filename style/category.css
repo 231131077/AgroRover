@@ -1,0 +1,23 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+main{
+    padding: 5px 20px;
+}
+.itemCategory{
+    width: 100%;
+    align-items: center;
+    border-bottom: 2px solid #dedede;
+    display: flex;
+    align-items: center;
+}
+
+.category{
+    margin: 0;
+    padding: 0;
+}
+
+.category img {
+    width: 10%;
+    padding: 20px;
+}
