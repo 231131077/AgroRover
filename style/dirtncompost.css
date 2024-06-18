@@ -2,11 +2,15 @@
     font-family: "Poppins", sans-serif;
 }
 
+main {
+    padding: 20px;
+}
+
 .tanah-section {
     width: 97%;
 }
 
-article {
+.tanah-section article {
     background-color: white;
     border: 1px solid #ddd;
     padding: 20px;

@@ -31,7 +31,6 @@ img {
   color: #000;
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
 }
 
@@ -71,12 +70,4 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* Untuk layar sangat kecil */
-@media screen and (max-width: 480px) {
-  a {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 
