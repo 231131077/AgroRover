@@ -1,6 +1,9 @@
 :root {
   max-width: 1440px;
   font-family: "Poppins", sans-serif;
+  --green : #29481E;
+  --linear: linear-gradient(to right, #a8e063, #56ab2f);
+  --greenlight : #a8e063;
 }
 
 .profile-container {
@@ -10,6 +13,7 @@
 }
 
 .left-profile {
+  width: 100%;
   background: #f4f4f4;
   padding: 20px;
 }
@@ -28,7 +32,7 @@
 .online {
   width: 10px;
   height: 10px;
-  background-color: #4caf50;
+  background-color: var(--greenlight);
   border-radius: 100%;
   margin-right: 5px;
 }
@@ -124,7 +128,7 @@
 }
 
 .navbar-shop ul li:hover {
-  background: rgb(48, 75, 48);
+  background: var(--green);
   color: white;
 }
 
@@ -141,7 +145,7 @@
   padding: 10px;
 }
 .wrapperAdShop .title{
-  color: #4caf50;
+  color: var(--green);
   font-size: 100%;
   margin: 0;
   padding: 0;

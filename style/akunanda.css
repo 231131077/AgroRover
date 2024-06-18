@@ -13,6 +13,9 @@ body {
 }
 :root {
   overflow-x: hidden;
+  --green : #29481E;
+  --linear: linear-gradient(to right, #a8e063, #56ab2f);
+  --greenlight : #a8e063;
 }
 
 * {
@@ -28,13 +31,13 @@ main {
   flex-direction: column;
   width: 200px;
   padding: 20px;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .list-item a {
   text-decoration: none;
-  color: black;
+  color: #000;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
@@ -59,7 +62,7 @@ main {
 }
 
 .profile-container {
-  background-color: white;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -90,7 +93,7 @@ main {
   border: none;
   border-radius: 5px;
   background-color: #007bff;
-  color: white;
+  color: #fff;
   cursor: pointer;
 }
 .profile-container form {
@@ -129,7 +132,7 @@ main {
 .profile-container button {
   margin-top: 20px;
   padding: 10px;
-  background-color: #4caf50;
+  background-color: var(--green);
   color: white;
   border: none;
   border-radius: 5px;

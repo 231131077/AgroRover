@@ -6,6 +6,9 @@
 
 :root{
   overflow-x: hidden;
+  --green : #29481E;
+  --linear: linear-gradient(to right, #a8e063, #56ab2f);
+  --greenlight : #a8e063;
 }
 
 header {
@@ -57,5 +60,5 @@ header {
 }
 
 .gradient {
-  background: linear-gradient(122deg, #dfff1b 0%, #4caf50 100%);
+  background: var(--linear);
 }

@@ -1,5 +1,8 @@
 * {
     font-family: "Poppins", sans-serif;
+    --green : #29481E;
+    --linear: linear-gradient(to right, #a8e063, #56ab2f);
+    --greenlight : #a8e063;
 }
 
 ol {

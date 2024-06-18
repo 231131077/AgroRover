@@ -1,5 +1,8 @@
 :root{
     font-family: "Poppins", sans-serif;
+    --green : #29481E;
+    --linear: linear-gradient(to right, #a8e063, #56ab2f);
+    --greenlight : #a8e063;
 }
 
 .notification{
@@ -46,6 +49,6 @@
     outline: none;
 }
 .btn-notif button:hover{
-    background: #316132;
+    background: var(--green);
     color: #fff;
 }
