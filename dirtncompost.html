@@ -20,26 +20,9 @@
     }
   </script>
   <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const tanahButton = document.getElementById('tanah-button');
-    const pupukButton = document.getElementById('pupuk-button');
+document.addEventListener('DOMContentLoaded', () => {
     const tanahSection = document.getElementById('tanah-section');
-    const pupukSection = document.getElementById('pupuk-section');
     const readMoreButtons = document.querySelectorAll('.read-more');
-
-    tanahButton.addEventListener('click', () => {
-        tanahSection.classList.add('active');
-        pupukSection.classList.remove('active');
-        tanahButton.classList.add('active');
-        pupukButton.classList.remove('active');
-    });
-
-    pupukButton.addEventListener('click', () => {
-        pupukSection.classList.add('active');
-        tanahSection.classList.remove('active');
-        pupukButton.classList.add('active');
-        tanahButton.classList.remove('active');
-    });
 
     readMoreButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -126,67 +109,114 @@
       </form>
     </header>
     <!-- INI ADALAH CLOSING HEADER -->
-    <main>
-        <nav class="tanah-or-pupuk">
-            <button id="tanah-button" class="active">Tanah</button>
-            <button id="pupuk-button">Pupuk</button>
-        </nav>
-        <section id="tanah-section" class="active">
-            <article>
-                <h2 class="short-text">Tanah Aluvial</h2>
-                <section class="full-text">
-                    <h4>Karakteristik Aluvial</h4>
-                    <ul>
-                        <li>Aluvial memiliki tekstur yang halus. Namun butirannya belum tentu sama antara satu lokasi dengan lokasi lainnya.</li>
-                        <li>Memiliki kandung mineral cukup tinggi sehingga baik untuk tanaman.</li>
-                        <li>Berada di dataran rendah. Biasanya, lokasi aluvial dekat dengan aliran sungai. Tetapi bisa juga pada daerah yang dulunya berupa sungai namun saat ini sudah sepenuhnya terendapkan.</li>
+  <main>
+      <section id="tanah-section">
+          <article>
+              <h2 class="short-text">Jenis Tanah Humus dan Manfaatnya</h2>
+              <section class="full-text">
+                <p>Humus sendiri merupakan salah satu dari jenis tanah yang terbentuk karena proses pelapukan dedaunan serta bagian pohon lainnya seperti batang pohon. Selain itu, humus juga memiliki campuran kotoran hewan.</p>
+                <p>Karakteristik Humus</p>
+                <ul>
+                  <li>Pada umumnya humus memiliki warna gelap seperti coklat gelap atau kehitam-hitaman.</li>
+                  <li>Memiliki karakteristik sangat subur. Secara kimiawi, humus mengandung zat organik, beberapa di antaranya yaitu fenol, alifatik, asam karboksilat, dan hidroksida.</li>
+                  <li>Daya serapnya tinggi terhadap air sehingga baik untuk pertumbuhan tanaman.</li>
+                </ul>
+                <p>Manfaat Humus</p>
+                <ol>
+                  <li>Bahan pembuat pupuk organik.</li>
+                  <li>Digunakan sebagai Media Tanam</li>
+                </ol>
+              </section>
+              <button class="read-more">Read More</button>
+          </article>
+          <article>
+              <h2 class="short-text">Jenis Tanah Aluvial dan Manfaatnya</h2>
+              <section class="full-text">
+                <p>Jenis-jenis tanah aluvial sendiri terbentuk karena adanya proses pengendapan dari material lumpur serta pasir halus yang terbawa aliran air akibat proses erosi. Ketika material tersebut sampai ke cekungan atau daerah terendah, maka terjadilah proses pengendapan.</p>
+                <p>Karakteristik Aluvial</p>
+                <ul>
+                  <li>Aluvial memiliki tekstur yang halus. Namun butirannya belum tentu sama antara satu lokasi dengan lokasi lainnya. Semakin jauh dari sumber, maka aluvial memiliki butiran semakin halur.</li>
+                  <li>Memiliki kandung mineral cukup tinggi sehingga baik untuk tanaman.</li>
+                  <li>Berada di dataran rendah. Biasanya, lokasi aluvial dekat dengan aliran sungai. Tetapi bisa juga pada daerah yang dulunya berupa sungai namun saat ini sudah sepenuhnya terendapkan.</li>
+                </ul>
+                <p>Manfaat Aluvial</p>
+                <ol>
+                  <li>Digunakan sebagai area persawahan.</li>
+                  <li>Bisa juga dijadikan tempat untuk menanam palawija.</li>
+                </ol>
+              </section>
+              <button class="read-more">Read More</button>
+          </article>
+          <article>
+              <h2 class="short-text">Jenis Tanah Vulkanik dan Manfaatnya</h2>
+              <section class="full-text">
+                <p>Indonesia terkenal sebagai negara yang memiliki banyak gunung berapi. Di satu sisi, letusan gunung berapi merupakan bencana tersendiri bagi masyarakat sekitar. Namun di sisi lain, endapan dari material letusan tersebut sangat bermanfaat. <br>Endapan itulah yang kemudian disebut dengan tanah vulkanis atau vulkanik. Jenis-jenis tanah ini berasal dari material letusan gunung berapi. Saat meletus, gunung berapi memuntahkan berbagai material dari dapur magma.</p>
+                <p>Karakteristik Tanah Vulkanik</p>
+                <ul>
+                  <li>Mengandung unsur hara sangat tinggi seperti Natrium, Pottasium, Kalium, besi, dan aluminium dari erupsi gunung berapi</li>
+                  <li>Pada lapisan atas warnanya abu-abu hingga hitam pekat. Sedangkan lapisan bawahnya berwarna kekuningan, kemerahan, hingga coklat.</li>
+                  <li>Strukturnya rentan terhadap erosi.</li>
+                  <li>Sifatnya gembur.</li>
+                </ul>
+                <p>Manfaat Tanah Vulkanik</p>
+                <ol>
+                  <li>Kandungan unsur hara yang sangat tinggi membuat tanaman mudah tumbuh secara optimal dan menghasilkan pembuahan terbaik.</li>
+                  <li>Material ini juga banyak dimanfaatkan untuk bahan bangunan. Misalnya pasir di daerah letusan memiliki kualitas sangat baik dan menghasilkan struktur bangunan yang kuat.</li>
+                </ol>
+              </section>
+              <button class="read-more">Read More</button>
+          </article>
+          <article>
+              <h2 class="short-text">Pupuk</h2>
+              <section class="full-text">
+                <h3>Fungsi Pupuk</h3>
+                <p>Fungsi pupuk adalah sebagai sumber unsur hara tambahan atau pengganti yang diperlukan tanaman untuk mendukung pertumbuhannya. Pupuk juga bisa dipergunakan untuk memperbaiki struktur tanah agar layak digunakan sebagai media tanam.</p>
+                <p>Jenis Pupuk</p>
+                <ul>
+                  <li>Berdasarkan asalnya
+                    <ul class="sub">
+                      <li>Pupuk Alam</li>
+                      <li class="desc">Adalah pupuk yang yang terbuat dari bahan yang berasal dari alam.</li>
+                      <li class="none">Contoh pupuk alam adalah pupuk kompos, pupuk kandang, pupuk guano dll.</li>
+                      <li>Pupuk Buatan</li>
+                      <li class="desc">Adalah pupuk yang dibuat oleh pabrik dengan merekayasan bahan dari alam melalui proses fisika dan kimia.</li>
+                      <li class="none">Contoh pupuk buatan adalah Pupuk Urea, Pupuk TSP, Pupuk ZA dll.</li>
                     </ul>
-                    <p>Adapun manfaat dari tipe soil aluvial di bidang pertanian adalah digunakan sebagai area persawahan. Bisa juga dijadikan tempat untuk menanam palawija. Penggunaan aluvial sebagai area pertanian memberikan banyak manfaat bagi petani</p>
-                </section>
-                <button class="read-more">Read More</button>
-            </article>
-            <article>
-                <h2 class="short-text">Tanah Humus</h2>
-                <section class="full-text">
-                    <h4>Karakteristik Humus</h4>
-                    <ul>
-                        <li>Pada umumnya humus memiliki warna gelap seperti coklat gelap atau kehitam-hitaman.</li>
-                        <li>Terbentuk dari proses pelapukan, humus biasanya terdapat pada lapisan permukaan paling atas sehingga sifatnya cenderung tidak stabil terhadap faktor eksternal seperti suhu, kelembaban, dan lainnya.</li>
-                        <li>Teksturnya sangat gembur dan tidak padat seperti jenis-jenis tanah lain semisal tanah liat. Sehingga sangat baik untuk pertanian.</li>
-                        <li>Memiliki karakteristik sangat subur. Secara kimiawi, humus mengandung zat organik, beberapa di antaranya yaitu fenol, alifatik, asam karboksilat, dan hidroksida.</li>
-                        <li>Daya serapnya tinggi terhadap air sehingga baik untuk pertumbuhan tanaman.</li>
+                  </li>
+                </ul>
+                <ul>
+                  <li>Berdasarkan senyawanya
+                    <ul class="sub">
+                      <li>Pupuk Organik</li>
+                      <li class="desc">Pupuk yang memiliki kandungan senyawa organik.</li>
+                      <li class="none">Pupuk organik kebanyakan berasal dari alam, yang terproses alami atau dengan rekayasa.</li>
+                      <li class="none">Contoh pupuk organik adalah pupuk kompos, pupuk kandang, pupuk guano dll.</li>
+                      <li>Pupuk Anorganik</li>
+                      <li class="desc">Pupuk yang memiliki senyawa anorganik.</li>
+                      <li class="none">Pupuk anorganik kebanyakan merupakan pupuk buatan, maupun pupuk alam yang terbuat dari bahan kimia.</li>
+                      <li class="none">Contoh pupuk anorganik adalah Pupuk NPK, Pupuk Urea, Pupuk TSP, Pupuk ZA dll.</li>
                     </ul>
-                    <h4>Manfaat Humus</h4>
-                        <p>1. Bahan pembuat pupuk organik.</p>
-                        <p>Pupuk organik dipakai untuk mengoptimalkan kesuburan media tanam sehingga dapat dijadikan sebagai media tanam berkualitas. Selain humus, bahan pembuatan pupuk organik lainnya antara lain limbah organik, makanan, kotoran hewan, dan lainnya.</p>
-                        <p>2. Digunakan sebagai Media Tanam</p>
-                        <p>Selain sebagai campuran dalam pembuatan pupuk organik, humus juga banyak dipakai untuk media tanam secara langsung. Kandungan unsur haranya yang melimpah memungkinkan tanaman tumbuh subur dan sehat.</p>
-                </section>
-                <button class="read-more">Read More</button>
-            </article>
-        </section>
-
-        <section id="pupuk-section">
-            <article>
-                <h2>A</h2>
-                <p class="short-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <p class="full-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque pharetra felis ut efficitur. Suspendisse potenti. Ut malesuada, massa et rhoncus eleifend, tellus tortor congue ipsum, et molestie nulla ex auctor metus. Phasellus ac mauris non purus suscipit.</p>
-                <button class="read-more">Read More</button>
-            </article>
-            <article>
-                <h2>A</h2>
-                <p class="short-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <p class="full-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque pharetra felis ut efficitur. Suspendisse potenti. Ut malesuada, massa et rhoncus eleifend, tellus tortor congue ipsum, et molestie nulla ex auctor metus. Phasellus ac mauris non purus suscipit.</p>
-                <button class="read-more">Read More</button>
-            </article>
-            <article>
-                <h2>A</h2>
-                <p class="short-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <p class="full-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque pharetra felis ut efficitur. Suspendisse potenti. Ut malesuada, massa et rhoncus eleifend, tellus tortor congue ipsum, et molestie nulla ex auctor metus. Phasellus ac mauris non purus suscipit. Nulla vehicula pretium ornare. Aenean eget mi id metus malesuada rhoncus. Donec ultrices lacus eget odio ultricies, non eleifend enim efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec fermentum nisl mi, a cursus felis sagittis ac. Donec nec enim in sapien gravida efficitur ut vitae tortor. Donec elit magna, rutrum id lacus ut, congue varius ipsum. Phasellus efficitur efficitur ipsum, a consectetur justo ornare ut. Vestibulum porta turpis sem, sed sodales augue consequat at. Etiam consectetur, urna sit amet feugiat iaculis, neque eros hendrerit dolor, at iaculis arcu urna ac nisi. In nibh felis, pretium quis sagittis sed, fringilla finibus augue. Vivamus at lectus urna. Nullam facilisis gravida risus id blandit. Phasellus eu enim interdum, tempus ligula id, rhoncus erat.</p>
-                <button class="read-more">Read More</button>
-            </article>
-        </section>
-    </main>
+                  </li>
+                </ul>
+                <ul>
+                  <li>Berdasarkan bentuk pupuk
+                    <ul class="sub">
+                      <li>Pupuk Padat</li>
+                      <li class="desc">Pupuk yang memiliki bentuk fisik padatan dengan kelarutan yang beragam.</li>
+                      <li class="none">Kebanyakan merupakan pupuk yang menganduk unsur hara makro.</li>
+                      <li class="none">Contoh pupuk padat adalah pupuk tablet, pupuk briket, pupuk granul, dll.
+                      </li>
+                      <li>Pupuk Cair</li>
+                      <li class="desc">Pupuk yang memiliki bentuk fisik cair.</li>
+                      <li class="none">Kebanyakan merupakan pupuk yang mengandung unsur hara makro dan mikro.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+              <button class="read-more">Read More</button>
+          </article>
+      </article>
+  </main>
     <footer>
         <section class="container">
           <section class="list">
