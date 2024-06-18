@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:site_name" content="AgroRover" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" image="/x-icon" />
+    <link rel="stylesheet" href="style/mainmenu.css" />
+    <link rel="stylesheet" href="style/cart.css" />
+    <meta property="og:title" content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
+  </head>
+
+<body>
+      <!-- SIDE BAR MENU -->
+  <aside>
+    <nav>
+      <ul>
+        <li>
+          <section id="msection" onclick="openNav()">
+            <section class="msection">
+              <section class="md"></section>
+            </section>
+          </section>
+        </li>
+        <li><a href="mainmenu.html">Beranda</a></li>
+        <li><a href="product.html">Produk</a></li>
+        <li><a href="category.html">Kategori</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="akunanda.html">Akun Anda</a></li>
+        <li><a href="myshop.html">Toko Anda</a></li>
+        <li><a href="plantdirectory.html">Panduan Pertumbuhan</a></li>
+        <li><a href="dirtncompost.html">Panduan Kondisi Tanah dan Pupuk</a></li>
+        <li><a href="login.html">Keluar</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- INI ADALAH OPENING HEADER -->
+  <header>
+    <form action="mainmenu.html" method="GET">
+      <table>
+        <caption>
+          Ikuti Kami di,
+        </caption>
+        <tr>
+          <td><img src="assets/logo/logo.png" alt="Logo" /></td>
+          <section class="containerSearch">
+            <td class="search-bar">
+              <input type="search" placeholder="Cari bahan yang anda inginkan..." />
+            </td>
+            <td>
+              <button type="submit" class="searchBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+              </button>
+            </td>
+          </section>
+          <td class="icon">
+            <a href="cart.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-cart-dash-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1" />
+              </svg>
+            </a>
+            <a href="notification.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bell-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+              </svg>
+            </a>
+            <svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="iHamburger" viewBox="0 1 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </header>
+  <!-- INI ADALAH CLOSING HEADER --> 
+    <main>
+        <article class="container-cart">
+            <section class="top-content top-titles">
+                <section class="left">
+                    <p>Produk</p>
+                </section>
+                <section class="right">
+                    <section>
+                        <p>Harga Satuan</p>
+                    </section>
+                    <section>
+                        <p>Kuantitas</p>
+                    </section>
+                    <section>
+                        <p>Total Harga</p>
+                    </section>
+                    <section>
+                        <p>Aksi</p>
+                    </section>
+                </section>
+            </section>
+            <section class="top-content myItems myShop">
+                <section class="left">
+                    <section>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-shop" viewBox="0 0 16 16">
+                            <path
+                                d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z" />
+                        </svg>
+                    </section>
+                    <section>
+                        <p>Babymonster Farmer</p>
+                    </section>
+                </section>
+            </section>
+            <section class="top-content myItems">
+                <section class="left">
+                    <section>
+                        <img src="assets/image/shop-item/protein/telurayam.jpg" alt="">
+                    </section>
+                    <section>
+                        <p>Telur Ayam</p>
+                    </section>
+                </section>
+                <section class="right">
+                    <section>
+                        <p>Rp. 2.500</p>
+                    </section>
+                    <section>
+                        <p>@10</p>
+                    </section>
+                    <section>
+                        <p>25.000</p>
+                    </section>
+                    <section>
+                        <button>Hapus</button>
+                    </section>
+                </section>
+            </section>
+            <section class="top-content myItems">
+                <section class="left">
+                    <section>
+                        <img src="assets/image/shop-item/protein/tempe.jpg" alt="">
+                    </section>
+                    <section>
+                        <p>Tempe</p>
+                    </section>
+                </section>
+                <section class="right">
+                    <section>
+                        <p>Rp. 2.500</p>
+                    </section>
+                    <section>
+                        <p>@10</p>
+                    </section>
+                    <section>
+                        <p>25.000</p>
+                    </section>
+                    <section>
+                        <button>Hapus</button>
+                    </section>
+                </section>
+            </section>
+            <section class="top-content myItems">
+                <section class="left">
+                    <section>
+                        <img src="assets/image/shop-item/protein/daging sapi.jpg" alt="">
+                    </section>
+                    <section>
+                        <p>Daging Sapi</p>
+                    </section>
+                </section>
+                <section class="right">
+                    <section>
+                        <p>Rp. 52.000</p>
+                    </section>
+                    <section>
+                        <p>@10</p>
+                    </section>
+                    <section>
+                        <p>520.000</p>
+                    </section>
+                    <section>
+                        <button>Hapus</button>
+                    </section>
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <section class="container">
+          <section class="list">
+            <section class="item">
+              <h1>Ikuti Kami</h1>
+              <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Tiktok</li>
+                <li>Kampus Pengembang</li>
+              </ul>
+            </section>
+            <section class="item">
+              <h1>Layanan Pelanggan</h1>
+              <ul>
+                <li>Bantuan</li>
+                <li>Metode Pembayaran</li>
+                <li>Hubungi Kami</li>
+                <li>Gratis Ongkir</li>
+                <li>AgroPay</li>
+                <li>Agro Coins</li>
+                <li>Agro Voucher</li>
+              </ul>
+            </section>
+            <section class="item">
+              <h1>Metode Pembayaran</h1>
+              <ul>
+                <li>AgroPay</li>
+                <li>Mobile Banking</li>
+                <li>Virtual Account</li>
+                <li>Indomaret</li>
+                <li>Alfamidi</li>
+                <li>Alfamart</li>
+              </ul>
+            </section>
+          </section>
+        </section>
+        <section class="watermark">
+          <section>
+            <p>Copyright &copy; 2024 AgroRover. All Rights Reserved.</p>
+          </section>
+          <section class="univ">
+            <p>Universitas Mikroskil, Indonesia.</p>
+          </section>
+        </section>
+      </footer>
+    
+      <script>
+        function openNav() {
+          document.querySelector("body").classList.toggle("wrap");
+          document.querySelector("aside").classList.toggle("active");
+        }
+      </script>
+</body>
+
+</html>
