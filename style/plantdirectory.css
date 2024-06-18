@@ -7,9 +7,11 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 main {
+  color: #000;
   margin: 20px;
 }
 
@@ -25,9 +27,11 @@ img {
   width: 100%;
 }
 
-.container-item {
+.container-item a {
+  color: #000;
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
 }
 
@@ -48,7 +52,7 @@ img {
 
 /* Untuk layar besar (tablet) */
 @media screen and (max-width: 1520px) {
-  .container-item {
+  a {
     grid-template-columns: repeat(6, 1fr);
   }
 }
@@ -56,21 +60,21 @@ img {
 
 /* Untuk layar sedang (tablet) */
 @media screen and (max-width: 1024px) {
-  .container-item {
+  a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 /* Untuk layar kecil (ponsel) */
 @media screen and (max-width: 768px) {
-  .container-item {
+  a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Untuk layar sangat kecil */
 @media screen and (max-width: 480px) {
-  .container-item {
+  a {
     grid-template-columns: repeat(2, 1fr);
   }
 }

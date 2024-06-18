@@ -1,0 +1,11 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+ol {
+    padding: 0;
+}
+
+.disc li {
+    list-style-type: disc;
+}
