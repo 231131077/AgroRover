@@ -17,6 +17,8 @@
   <script>
 function dropdown() {
   var selectedValue = document.getElementById("jenis").value;
+  var title = document.getElementById("titleC") ;
+
   var data = {
     tumbuhan: [
       {
@@ -124,7 +126,6 @@ function dropdown() {
     document.getElementById("desc" + (i + 1)).innerText = items[i].desc;
   }
 }
-
   </script>
   <script>
     function openNav() {
@@ -209,7 +210,7 @@ function dropdown() {
     <!-- INI ADALAH CLOSING HEADER -->
 
   <section>
-    <h1>Title</h1>
+    <h1>Pilih Kategori</h1>
   </section>
   <main>
     <section>
@@ -219,10 +220,8 @@ function dropdown() {
         <option value="protein">Protein</option>
       </select>
     </section>
-    <section class="title">
-      <h2>Title</h2>
-    </section>
     <section class="container-item">
+      <a href="plantsuggest.html">
       <section class="itemPlant" id="item1">
         <table>
           <tr>
@@ -301,6 +300,7 @@ function dropdown() {
           </tr>
         </table>
       </section>
+    </a>
     </section>
   </main>  
   <footer>
