@@ -244,10 +244,15 @@ footer svg {
 
 @media (max-width: 992px) {
   header {
-    padding: 1.3rem 5%;
+    padding: 0.5rem 5%;
+  }
+
+  .logo img{
+    width: 3rem;
   }
   .icons svg {
     display: block;
+    width: 1.5rem;
   }
 
   .icons #close-icon {
@@ -281,7 +286,7 @@ footer svg {
   }
 
   #check:checked ~ .navbar {
-    height: 17.7rem;
+    height: 15rem;
   }
 
   .navbar a {
