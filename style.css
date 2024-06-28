@@ -5,7 +5,7 @@
 header {
   max-width: 1440px;
   max-height: fit-content;
-  background-image: url(../AgroRover/assets/image/content/header.jpg);
+  background-image: url(assets/image/content/header.jpg);
   background-size: cover;
   padding: 3%;
   padding-top: 23%;
@@ -40,11 +40,12 @@ article h3 {
 
 ul {
   display: flex;
+  padding: 0;
 }
 
 ul li {
   list-style: none;
-  padding: 10px;
+  padding: 0;
 }
 
 footer {

@@ -4,7 +4,7 @@ const close = document.querySelector(".close");
 window.onload = function () {
   setTimeout(() => {
     popup.style.display = "block";
-  }, 2000);
+  }, 500);
 };
 
 close.addEventListener("click", () => {
