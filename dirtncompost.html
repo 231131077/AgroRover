@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </header>
     <!-- INI ADALAH CLOSING HEADER -->
   <main>
+    
       <section id="tanah-section">
           <article>
               <h2 class="short-text">Jenis Tanah Humus dan Manfaatnya</h2>
@@ -220,6 +221,29 @@ document.addEventListener('DOMContentLoaded', () => {
               <button class="read-more">Read More</button>
           </article>
       </article>
+      <section class="container-community">
+        <section class="community-content">
+          <h2>Community</h2>
+          <p>Bergabung bersama kami di situs kami, kami akan membantu anda menemukan dan menyediakan berbagai informasi dan tips terkait pertumbuhan tanaman. Jika anda memiliki pertanyaan, kami akan sangat menjawab anda.</p>
+          <section id="add-article-section">
+            <h2>Tambah Artikel Baru</h2>
+            <form id="add-article-form">
+                <label for="category">Kategori:</label>
+                <select id="category" name="category">
+                    <option value="tanah">Tanah</option>
+                    <option value="pupuk">Pupuk</option>
+                </select>
+                <label for="short-text">Judul:</label>
+                <input type="text" id="short-text" name="short-text" required>
+                <label for="full-text">Isi:</label>
+                <textarea id="full-text" name="full-text" required></textarea>
+                <label for="author">Nama Penulis:</label>
+                <input type="text" id="author" name="author" required>
+                <button type="submit">Tambahkan Artikel</button>
+            </form>
+        </section>
+        </section>
+      </section>
   </main>
     <footer>
         <section class="container">
