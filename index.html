@@ -1,49 +1,1157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:site_name" content="AgroRover" />
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico" image="/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <meta property="og:title" content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
-    <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
-  </head>
-  <body>
-    <header>
-      <h1>AgroRover</h1>
-      <h2>Jual dan Beli Bahan Pokok Anda Bersama Kami</h2>
-      <br />
-      <span> <a href="login.html">Daftar Sekarang</a></span>
-    </header>
 
-    <article>
-      <h3>AgroRover</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:site_name" content="AgroRover" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" image="/x-icon" />
+  <link rel="stylesheet" href="style/mainmenu.css" />
+  <meta property="og:title" content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
+</head>
+
+<body>
+  <!-- SIDE BAR MENU -->
+  <aside>
+    <nav>
       <ul>
         <li>
-          Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan
-          petani.
+          <section id="msection" onclick="openNav()">
+            <section class="msection">
+              <section class="md"></section>
+            </section>
+          </section>
+        </li>
+        <li><a href="mainmenu.html">Beranda</a></li>
+        <li><a href="product.html">Produk</a></li>
+        <li><a href="category.html">Kategori</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="akunanda.html">Akun Anda</a></li>
+        <li><a href="myshop.html">Toko Anda</a></li>
+        <li><a href="plantdirectory.html">Panduan Pertumbuhan</a></li>
+        <li><a href="dirtncompost.html">Panduan Kondisi Tanah dan Pupuk</a></li>
+        <li><a href="login.html">Keluar</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- INI ADALAH OPENING HEADER -->
+  <header>
+    <form action="mainmenu.html" method="GET">
+      <table>
+        <caption>
+          Ikuti Kami di,
+        </caption>
+        <tr>
+          <td><a href="mainmenu.html"><img src="assets/logo/logo.png" alt="Logo" /></a></td>
+          <section class="containerSearch">
+            <td class="search-bar">
+              <input type="search" placeholder="Cari bahan yang anda inginkan..." />
+            </td>
+            <td>
+              <button type="submit" class="searchBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+              </button>
+            </td>
+          </section>
+          <td class="icon">
+            <a href="cart.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-cart-dash-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1" />
+              </svg>
+            </a>
+            <a href="notification.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bell-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+              </svg>
+            </a>
+            <svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="iHamburger" viewBox="0 1 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </header>
+  <!-- INI ADALAH CLOSING HEADER -->
+
+  <!-- INI ADALAH OPENING ADSENSE -->
+  <main>
+
+    <article id="popup" class="popup">
+      <img src="assets/image/mainmenu/popup-image.png" alt="">
+      <section class="close-popup close" id="close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="close-icon">
+          <path
+            d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" />
+        </svg>
+      </section>
+    </article>
+    <article class="ads">
+      <article class="containerAd">
+        <section class="wrapperAd">
+          <!--MAX 4 CONTTENT-->
+          <img src="assets/image/ads/iklan1.1.jpg" alt="preview1" class="autoscroll" />
+          <img src="assets/image/ads/iklan1.2.jpg" alt="preview2" class="autoscroll" />
+          <img src="assets/image/ads/iklan1.3.jpg" alt="preview3" class="autoscroll" />
+          <img src="assets/image/ads/iklan1.4.jpg" alt="preview4" class="autoscroll" />
+        </section>
+      </article>
+      <article class="Ads2">
+        <section class="wrapperAd2">
+          <img src="assets/image/ads/iklan1.2.jpg" alt="" />
+          <img src="assets/image/ads/iklan1.4.jpg" alt="" />
+        </section>
+      </article>
+    </article>
+    <!-- INI ADALAH CLOSING ADSENSE -->
+
+    <!-- INI ADALAH OPENING E-WALLET -->
+    <section class="card-container">
+      <article class="card">
+        <section class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5z" />
+          </svg>
+        </section>
+        <section class="values">
+          <p>AgroPay</p>
+          <p><small>Rp.99999999999999999999</small></p>
+        </section>
+      </article>
+      <article class="card">
+        <section class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-p-circle-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.5 4.002V12h1.283V9.164h1.668C10.033 9.164 11 8.08 11 6.586c0-1.482-.955-2.584-2.538-2.584zm2.77 4.072c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97z" />
+          </svg>
+        </section>
+        <section class="values">
+          <p>AgroPoints</p>
+          <p><small>12.734</small></p>
+        </section>
+      </article>
+      <article class="card">
+        <section class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+            <path
+              d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z" />
+          </svg>
+        </section>
+        <section class="values">
+          <p>MyVoucher</p>
+          <p><small>5 Aktif</small></p>
+        </section>
+      </article>
+    </section>
+    <!-- INI ADALAH CLOSING E-WALLET -->
+
+    <article class="categories">
+      <h2 class="title">Semua Kategori</h2>
+      <ul>
+        <li>
+          <img src="assets/image/mainmenu/sayur.jpeg" alt="" />
+          <p>Sayuran</p>
         </li>
         <li>
-          Platform panduan penanaman bahan pangan yang dapat membantu anda.
+          <img src="assets/image/mainmenu/buah-buahan.png" alt="" />
+          <p>Buah-buahan</p>
         </li>
         <li>
-          Terhubung dan dapat berkomunikasi dengan berbagai orang yang sudah
-          berpengalaman
+          <img src="assets/image/mainmenu/Ikan.png" alt="" />
+          <p>Ikan</p>
         </li>
-        <li>
-          Berbagai Informasi Seputar Pertanian dan Peternakan yang dapat di
-          akses dengan gratis
+        <li class="over-category1">
+          <img src="assets/image/mainmenu/Protein.png" alt="" />
+          <p>Protein</p>
+        </li>
+        <li class="over-category2">
+          <img src="assets/image/mainmenu/Rempah-Rempah.png" alt="" />
+          <p>Rempah-rempah</p>
+        </li>
+        <li class="over-category2">
+          <img src="assets/image/mainmenu/Sembako.png" alt="" />
+          <p>Sembako</p>
+        </li>
+        <li class="over-category2">
+          <img src="assets/image/mainmenu/Makanan-Ringan.png" alt="" />
+          <p>Makanan Ringan</p>
+        </li>
+        <li class="all-category">
+          <a href="category.html">
+            <img src="assets/image/mainmenu/kategori.png" alt="" />
+            <p>Kategori</p>
+          </a>
         </li>
       </ul>
     </article>
 
-    <footer>
-      <p>Copyright &copy; 2024. All Rights Reserved By AgroRover</p>
-    </footer>
-  </body>
+    <!-- INI ADALAH OPENING RECOMMEND ITEMS -->
+    <article class="product-section" class="section-p1">
+      <h1>Recommend Product</h1>
+      <p>New Product and Discount All For You</p>
+      <section class="pro-collection">
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/sayur/Cabai Rawit.jpg" alt="product image" />
+            <h4>Cabe Asli Baru Panen </h4>
+            <p class="discount">Diskon 10%</p>
+            <section class="container-price">
+              <p><del>Rp.60.000</del></p>
+              <h4 class="price">Rp.54.000</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Babymonster_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/sayur/kangkung.jpg" alt="product image" />
+            <h4>Kangkung Segar</h4>
+            <p class="discount">Diskon 15%</p>
+            <section class="container-price">
+              <p><del>Rp.15.000</del></p>
+              <h4 class="price">Rp.12.750</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Blackpinkfarmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/sayur/kubis.jpg" alt="product image" />
+            <h4>Sayur Kubis</h4>
+            <p class="discount">Diskon 10%</p>
+            <section class="container-price">
+              <p><del>Rp.20.000</del></p>
+              <h4 class="price">Rp.18.000</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Blackpinkfarmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/sayur/paprika.jpg" alt="product image" />
+            <h4>Protein</h4>
+            <p class="discount">Diskon 15%</p>
+            <section class="container-price">
+              <p><del>Rp.50.000</del></p>
+              <h4 class="price">Rp.42.500</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Blackpinkfarmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/sayur/sawijpg.jpg" alt="product image" />
+            <h4>Sawi Segar</h4>
+            <p class="discount">Diskon 20%</p>
+            <section class="container-price">
+              <p><del>10.000</del></p>
+              <h4 class="price">Rp.8.000</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Babymonster_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/sayur/wortel.jpeg" alt="product image" />
+            <h4>Wortel</h4>
+            <p class="discount">Diskon 15%</p>
+            <section class="container-price">
+              <p><del>Rp.15.000</del></p>
+              <h4 class="price">Rp.12.750</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Babymonster_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/protein/daging sapi.jpg" alt="product image" />
+            <h4>Daging Sapi Segar </h4>
+            <p class="discount">Diskon 20%</p>
+            <section class="container-price">
+              <p><del>Rp.120.000</del></p>
+              <h4 class="price">Rp.96.000</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>2NE1Farm</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/protein/salmon.jpg" alt="product image" />
+            <h4>Ikan Salmon Segar</h4>
+            <p class="discount">Diskon 35%</p>
+            <section class="container-price">
+              <p><del>Rp.180.000</del></p>
+              <h4 class="price">Rp.117.000</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>2NE1Farm</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/protein/susu-sapi.jpeg" alt="product image" />
+            <h4>Susu Sapi</h4>
+            <p class="discount">Diskon 10%</p>
+            <section class="container-price">
+              <p><del>Rp.12.000</del></p>
+              <h4 class="price">Rp.11.800</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>2NE1Farm</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/protein/telur-bebek.jpeg" alt="product image" />
+            <h4>Telur Bebek Asli</h4>
+            <p class="discount">Diskon 20%</p>
+            <section class="container-price">
+              <p><del>RP.20.000</del></p>
+              <h4 class="price">RP.16.000</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Blackpinkfarmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/protein/telurayam.jpg" alt="product image" />
+            <h4>Telur ayam </h4>
+            <p class="discount">Diskon 10%</p>
+            <section class="container-price">
+              <p><del>Rp.10.000</del></p>
+              <h4 class="price">Rp.9.000</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Blackpinkfarmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/protein/tempe.jpg" alt="product image" />
+            <h4>Tempe</h4>
+            <p class="discount">Diskon 15%</p>
+            <section class="container-price">
+              <p><del>Rp.7.000</del></p>
+              <h4 class="price">Rp.5950</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Babymonster_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/buah-buahan/blackberry.jpg" alt="product image" />
+            <h4>blackberry</h4>
+            <p class="discount">Diskon 20%</p>
+            <section class="container-price">
+              <p><del>Rp.80.000</del></p>
+              <h4 class="price">Rp.64.000</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>iKon_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/buah-buahan/jeruk.jpg" alt="product image" />
+            <h4>Jeruk Segar</h4>
+            <p class="discount">Diskon 15%</p>
+            <section class="container-price">
+              <p><del>Rp.30.000</del></p>
+              <h4 class="price">Rp.25.500</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>iKon_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/buah-buahan/Kiwi.png" alt="product image" />
+            <h4>Kiwi Segar</h4>
+            <p class="discount">Diskon 35%</p>
+            <section class="container-price">
+              <p><del>Rp.75.000</del></p>
+              <h4 class="price">Rp.48.750</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>iKon_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/buah-buahan/nanas.jpg" alt="product image" />
+            <h4>Nanas</h4>
+            <p class="discount">Diskon 10%</p>
+            <section class="container-price">
+              <p><del>Rp.13.000</del></p>
+              <h4 class="price">Rp.11.700</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>iKon_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/buah-buahan/semangka.jpg" alt="product image" />
+            <h4>Semangka Segar</h4>
+            <p class="discount">Diskon 15%</p>
+            <section class="container-price">
+              <p><del>Rp.15.000</del></p>
+              <h4 class="price">Rp.12.750</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>iKon_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/buah-buahan/strawberry.jpg" alt="product image" />
+            <h4>Strawberry</h4>
+            <p class="discount">Diskon 30%</p>
+            <section class="container-price">
+              <p><del>Rp.40.000</del></p>
+              <h4 class="price">Rp.28.000</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>iKon_Farmer</small></span>
+          </a>
+        </section>
+        <section class="product-cart">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/Makanan-ringan/Soyjoy.jpg" alt="product image" />
+            <h4>Soyjoy</h4>
+            <p class="discount">Diskon 15%</p>
+            <section class="container-price">
+              <p><del>Rp.10.000</del></p>
+              <h4 class="price">Rp.8.500</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Redvelvet_Mart</small></span>
+          </a>
+        </section>
+        <section class="product-cart last-item">
+          <a href="shopitem.html">
+            <img src="assets/image/shop-item/Makanan-ringan/Fitbar.jpg" alt="product image" />
+            <h4>Fitbar</h4>
+            <p class="discount">Diskon 20%</p>
+            <section class="container-price">
+              <p><del>Rp.6.500</del></p>
+              <h4 class="price">Rp.5.200</h4>
+            </section>
+            <section class="stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766
+                      1.98a.75.75 0 0 1-1.088-.79l.72-4.194-3.046-2.969a.75.75 0 0 1 .416-1.28l4.21-.611 1.882-3.815A.75.75 0 0 1 8 .25z" />
+              </svg>
+            </section>
+            <span><small>Babymonster_Farmer</small></span>
+          </a>
+        </section>
+      </section>
+    </article>
+    <!-- INI ADALAH CLOSING RECOMMEND ITEMS -->
+  </main>
+  <footer>
+    <section class="container">
+      <section class="list">
+        <section class="item">
+          <h1>Ikuti Kami</h1>
+          <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Tiktok</li>
+            <li>Kampus Pengembang</li>
+          </ul>
+        </section>
+        <section class="item">
+          <h1>Layanan Pelanggan</h1>
+          <ul>
+            <li>Bantuan</li>
+            <li>Metode Pembayaran</li>
+            <li>Hubungi Kami</li>
+            <li>Gratis Ongkir</li>
+            <li>AgroPay</li>
+            <li>Agro Coins</li>
+            <li>Agro Voucher</li>
+          </ul>
+        </section>
+        <section class="item">
+          <h1>Metode Pembayaran</h1>
+          <ul>
+            <li>AgroPay</li>
+            <li>Mobile Banking</li>
+            <li>Virtual Account</li>
+            <li>Indomaret</li>
+            <li>Alfamidi</li>
+            <li>Alfamart</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <section class="watermark">
+      <section>
+        <p>Copyright &copy; 2024 AgroRover. All Rights Reserved.</p>
+      </section>
+      <section class="univ">
+        <p>Universitas Mikroskil, Indonesia.</p>
+      </section>
+    </section>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.querySelector("body").classList.toggle("wrap");
+      document.querySelector("aside").classList.toggle("active");
+    }
+  </script>
+
+  <script src="script/popup.js">
+
+  </script>
+</body>
+
 </html>
