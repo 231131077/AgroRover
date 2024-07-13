@@ -191,10 +191,6 @@ main button {
     display: block;
   }
 
-  .container-input {
-    border: 1px solid #000000;
-  }
-
   form img {
     display: block;
     margin: 0 auto;

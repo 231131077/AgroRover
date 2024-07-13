@@ -182,13 +182,9 @@ svg {
     overflow-x: hidden;
     background-color: #ffffff;
   }
-  .container-input {
-    border: 1px solid;
-  }
 
   .input-box {
     width: 100%;
-    border: 1px solid;
   }
 
   input [type="text"] {
