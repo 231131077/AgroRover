@@ -38,7 +38,7 @@ main h1 {
 
 main .input-box {
   position: relative;
-  width: 350px;
+  width: 100%;
   height: 50px;
   margin: 30px 0;
 }
@@ -160,7 +160,7 @@ main button {
   font-size: 12px;
 }
 
-svg{
+svg {
   display: none;
 }
 
@@ -182,8 +182,27 @@ svg{
     overflow-x: hidden;
     background-color: #ffffff;
   }
+  .container-input {
+    border: 1px solid;
+  }
 
-  body{
+  .input-box {
+    width: 100%;
+    border: 1px solid;
+  }
+
+  input [type="text"] {
+    width: 100% !important;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px 20px;
+    font-size: 16px;
+    color: #000000;
+  }
+
+  body {
     background: #fff;
   }
   main {
@@ -238,7 +257,7 @@ svg{
     margin-top: 10px;
   }
 
-  svg{
+  svg {
     display: none;
   }
 }
