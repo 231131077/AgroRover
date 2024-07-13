@@ -160,6 +160,10 @@ main button {
   font-size: 12px;
 }
 
+svg{
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   :root {
     overflow: auto;
