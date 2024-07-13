@@ -12,39 +12,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <script src="script/changelanguage.js"></script>
   <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
 </head>
 
 <body>
   <main>
     <form action="mainmenu.html" method="GET">
-      <img src="assets/logo/logo.png" alt="" />
-      <h1>SIGN IN</h1>
-      <p>Welcome to AgroRover</p>
-      <section class="input-box">
-        <input type="text" placeholder="Username" autofocus/>
-        <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          viewBox="0 0 16 16">
-          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-        </svg>
-      </section>
-      <section class="input-box">
-        <input type="password" placeholder="Password" />
-        <svg class="password-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2" />
-        </svg>
-      </section>
-      <section class="remember-forgot">
-        <label> <input type="checkbox" />Remember me </label>
-        <a href="#">Forgot Password?</a>
-      </section>
-      <a href="mainmenu.html">
-        <button type="submit">Sign In</button>
-      </a>
-      <section class="register">
-        <p>Dont have an account? <a href="register.html">Register</a></p>
+      <section class="container">
+        <section class="logo">
+          <img src="assets/logo/logo.png" alt="" />
+          <h1 class="masuk">MASUK</h1>
+          <p class="selamat">Selamat Datang di AgroRover</p>
+        </section>
+        <section class="container-input">
+          <section class="input-box">
+            <input type="text" class="usn" placeholder="Nama Pengguna" autofocus />
+            <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+          </section>
+          <section class="input-box">
+            <input type="password" class="pw" placeholder="Kata Sandi" />
+            <svg class="password-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2" />
+            </svg>
+          </section>
+          <section class="remember-forgot">
+            <label> <input type="checkbox" />Ingat Saya </label>
+            <a href="#">Lupa Kata Sandi?</a>
+          </section>
+          <a href="index.html">
+            <button type="submit">MASUK</button>
+          </a>
+          <section class="register">
+            <p>Belum Memiliki Akun? <a href="register.html">Daftar</a></p>
+          </section>
+        </section>
       </section>
     </form>
   </main>

@@ -5,11 +5,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-:root{
-  overflow-x: hidden;
-  --green : #29481E;
+:root {
+  overflow: hidden;
+  --green: #29481e;
   --linear: linear-gradient(to right, #a8e063, #56ab2f);
-  --greenlight : #a8e063;
+  --greenlight: #a8e063;
 }
 body {
   display: flex;
@@ -19,12 +19,12 @@ body {
 }
 
 body {
-  background: url(../assets/image/content/background-signin.jpg);
+  background: #dbe1e1;
   background-size: cover;
 }
 
 main {
-  width: 420px;
+  width: 800px;
   background: rgba(255, 255, 255, 0.68);
   color: rgb(0, 0, 0);
   border-radius: 10px;
@@ -33,15 +33,20 @@ main {
 
 main h1 {
   font-size: 36px;
-  text-align: center;
   color: black;
 }
 
 main .input-box {
   position: relative;
-  width: 100%;
+  width: 350px;
   height: 50px;
   margin: 30px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .input-box input {
@@ -54,19 +59,11 @@ main .input-box {
   border-radius: 5px;
   color: #000000;
   font-size: 16px;
-  padding: 20px 45px 20px 20px;
+  padding: 0px 45px 0px 20px;
 }
 
 .input-box input::placeholder {
   color: #000000;
-}
-
-.input-box svg {
-  position: absolute;
-  left: 90%;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
 }
 
 main .remember-forgot {
@@ -79,7 +76,6 @@ main .remember-forgot {
 form img {
   width: 20%;
   display: block;
-  margin: 0 auto;
 }
 
 form {
@@ -100,9 +96,18 @@ form {
 .register a:hover {
   text-decoration: underline;
 }
+.logo {
+  width: 50%;
+  height: 300px;
+  align-items: left;
+  text-align: left;
+}
 
+.logo h1 {
+  text-align: left !important;
+}
 main button {
-  margin-top: 40px;
+  margin-top: 0px;
   width: 100%;
   height: 45px;
   background: var(--green);
@@ -118,7 +123,7 @@ main button {
 .register {
   font-size: 14px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .register a {
@@ -127,9 +132,109 @@ main button {
   font-weight: 600;
 }
 
+.bottom {
+  width: 760px;
+  position: fixed;
+  top: 92%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom .opt {
+  display: flex;
+}
+
+.opt p {
+  font-size: 12px;
+  margin-left: 40px;
+}
+
+#language {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.opsi {
+  font-size: 12px;
+}
 
 @media screen and (max-width: 768px) {
-  main{
-    margin: 5%;
+  :root {
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: #ffffff;
+  }
+  main {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  :root {
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: #ffffff;
+  }
+
+  body{
+    background: #fff;
+  }
+  main {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+  .container {
+    margin: 0;
+    display: block;
+  }
+
+  form img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .bottom {
+    display: none;
+  }
+
+  .logo {
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo h1 {
+    text-align: center !important;
+  }
+
+  main button {
+    margin-top: 0px;
+    width: 100%;
+    height: 45px;
+    background: var(--green);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .register {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  svg{
+    display: none;
   }
 }

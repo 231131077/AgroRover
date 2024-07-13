@@ -6,41 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:site_name" content="AgroRover" />
   <link rel="shortcut icon" href="assets/favicon/favicon.ico" image="/x-icon" />
-  <link rel="stylesheet" href="style/login.css" />
+  <link rel="stylesheet" href="style/register.css" />
   <meta property="og:title" content="Platform Jual beli bahan pangan dan bahan dasar untuk masyarakat dan petani" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+  <script src="script/changelanguage.js"></script>
   <title>AgroRover: Platform Jual Beli Bahan Pokok</title>
 </head>
 
 <body>
   <main>
     <form action="mainmenu.html" method="GET">
-      <img src="assets/logo/logo.png" alt="" />
-      <h1>SIGN UP</h1>
-      <p>Welcome to AgroRover</p>
-      <section class="input-box">
-        <input type="text" placeholder="Nama Lengkap" autofocus/>
-      </section>
-      <section class="input-box">
-        <input type="email" placeholder="Alamat Email" />
-      </section>
-      <section class="input-box">
-        <input type="tel" placeholder="Nomor Telepon" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
-      </section>
-      <section class="input-box">
-        <input type="password" placeholder="Password" />
-      </section>
-      <section class="input-box">
-        <input type="password" placeholder="Konfirmasi Password" />
-      </section>
-      <a href="mainmenu.html">
-        <button type="submit">Sign Up</button>
-      </a>
-      <section class="register">
-        <p>have an account? <a href="login.html">Login</a></p>
+      <section class="container">
+        <section class="logo">
+          <img src="assets/logo/logo.png" alt="" />
+          <h1 class="masuk">DAFTAR</h1>
+          <p class="selamat">Selamat Datang di AgroRover</p>
+        </section>
+        <section class="container-input">
+          <section class="input-box">
+            <input type="text" class="usn" placeholder="Nama Lengkap" autofocus />
+
+          </section>
+          <section class="input-box">
+            <input type="text" class="usn" placeholder="Alamat Email" />
+
+          </section>
+          <section class="input-box">
+            <input type="text" class="usn" placeholder="Nomor Telepon" />
+
+          </section>
+          <section class="input-box">
+            <input type="text" class="usn" placeholder="Kata Sandi" autofocus />
+
+          </section>
+          <section class="input-box">
+            <input type="password" class="pw" placeholder="Konfirmasi Kata Sandi" />
+
+          </section>
+          <section class="remember-forgot">
+            <label> <input type="checkbox" />Ingat Saya </label>
+          </section>
+          <a href="index.html">
+            <button type="submit">DAFTAR</button>
+          </a>
+          <section class="register">
+            <p>Sudah Memiliki Akun? <a href="login.html">Masuk</a></p>
+          </section>
+        </section>
       </section>
     </form>
   </main>

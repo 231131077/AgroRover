@@ -5,10 +5,12 @@
   background: #ffffff;
   max-width: 1440px;
   overflow-x: hidden;
+  margin: 0 auto;
   --green: #29481e;
   --linear: linear-gradient(to right, #a8e063, #56ab2f);
   --greenlight: #a8e063;
 }
+
 
 .popup {
   position: fixed;
@@ -67,6 +69,21 @@ body {
 main {
   width: 100%;
   max-width: 1440px;
+}
+
+table caption .container {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+table a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.daftar{
+  color: #fff;
 }
 
 /* SIDE BAR */
